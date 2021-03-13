@@ -29,6 +29,7 @@ plugins:
         syntax_and_semantics/macros.md: syntax_and_semantics/macros/README.md
         syntax_and_semantics/annotations.md: syntax_and_semantics/annotations/README.md
         guides/continuous_integration.md: guides/ci/README.md
+        overview/index.md: syntax_and_semantics/README.md
 
 markdown_extensions:
   - admonition
