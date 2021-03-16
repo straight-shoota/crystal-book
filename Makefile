@@ -27,6 +27,25 @@ $(MKDOCS): $(PIP) requirements.txt
 $(PIP):
 	python3 -m venv .venv
 
+.PHONY: manuals
+manuals: ## Import manuals from crystal-lang/shards repository
+manuals: docs/shards/shards.md docs/shards/shard.yml.md
+
+.PHONY: external/shards/%.adoc
+external/shards/%.adoc:
+	mkdir -p $(@D)
+	wget -O $@ https://github.com/crystal-lang/shards/raw/master/docs/$(@F)
+
+docs/shards/%.md: external/shards/%.html
+	mkdir -p $(@D)
+	pandoc -f html --lua-filter=script/pandoc-manpage-filter.lua -t markdown_strict $< -o $@
+
+external/shards/%.xml: external/shards/%.adoc
+	asciidoctor -b docbook -d manpage $< -o $@
+
+external/shards/%.html: external/shards/%.adoc
+	asciidoctor -b html5 -d manpage $< -o $@
+
 .PHONY: clean
 clean: ## Remove build directory
 	rm -rf $(OUTPUT_DIR)

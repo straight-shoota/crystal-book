@@ -1,0 +1,409 @@
+shard.yml(5) Manual Page
+========================
+
+NAME
+----
+
+shard.yml - metadata for projects managed by shards(1)
+
+DESCRIPTION
+-----------
+
+The file `shard.yml` is a YAML file with metadata about a project
+managed by shards, known as a **shard**. It must contain at least `name`
+and `version` attributes plus optional additional attributes.
+
+Both libraries and applications will benefit from `shard.yml`.
+
+The metadata for libraries are expected to have more information (e.g.,
+list of authors, description, license) than applications that may only
+have a name, version and dependencies.
+
+FORMAT
+------
+
+The file must be named `shard.yml` and be a valid YAML file with UTF-8
+encoding. It must not contain duplicate attributes in any mapping. It
+should use an indent of 2 spaces. It should not use advanced YAML
+features, only simple mappings, sequences and strings (Failsafe Schema).
+
+REQUIRED ATTRIBUTES
+-------------------
+
+**name**  
+The name of the project (string, required).
+
+-   It must be unique.
+
+-   It must be 50 characters or less.
+
+-   It should be lowercase (a-z).
+
+-   It should not contain `crystal`.
+
+-   It may contain digits (0-9) but not start with one.
+
+-   It may contain underscores or dashes but not start/end with one.
+
+-   It must not have consecutive underscores or dashes.
+
+Examples: `minitest`, `mysql2`, `battery-horse`.
+
+**version**  
+The version number of the project (string, required).
+
+-   It must contain digits.
+
+-   It may contain dots and dashes but not consecutive ones.
+
+-   It may contain a letter to make it a 'prerelease'.
+
+Examples: `1.2.3`, `2.0.0.1`, `1.0.0.alpha` `2.0.0-rc1` or `2016.09`.
+
+While Shards doesn’t enforce it, following a rational versioning scheme
+like [Semantic Versioning](http://semver.org/) or [Calendar
+Versioning](http://calver.org/) is highly recommended.
+
+OPTIONAL ATTRIBUTES
+-------------------
+
+**authors**  
+A list of authors, along with their contact email (optional) (sequence
+of string).
+
+-   Each author must have a name.
+
+-   Each author may have an email address, within angle bracket (`<` and
+    `>`) chars.
+
+**Example:**
+
+    authors:
+    - Ary
+    - Julien Portalier <julien@example.org>
+
+**crystal**  
+A restriction to indicate which are the supported crystal versions. This
+will usually express a lower and upper-bound constraints (string,
+recommended)
+
+When resolving dependencies, only the versions that comply with the
+current crystal will be candidates. You can pass
+`--ignore-crystal-version` to disregard this behavior.
+
+The valid values are the same as for `dependencies.version`:
+
+-   It may be a version number.
+
+-   It may be `"*"` if any version will do.
+
+-   The version number may be prefixed by an operator: `<`, `⇐`, `>`,
+    `>=` or `~>`.
+
+-   Multiple requirements can be separated by commas.
+
+When just a version number is used it has a different semantic compared
+to dependencies: `x.y.z` will be interpreted as `~> x.y, >= x.y.z` (ie:
+`>= x.y.z, < (x+1).0.0`) honoring semver.
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><div class="title">
+Note
+</div></td>
+<td>If this property is not included it is treated as <code>&lt; 1.0.0</code>.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+    crystal: ">= 0.35.0"
+
+**dependencies**  
+A list of required dependencies (mapping).
+
+Each dependency begins with the name of the dependency as a key (string)
+then a list of attributes (mapping) that depend on the resolver type.
+
+**Example:**
+
+    dependencies:
+      minitest:
+        github: ysbaddaden/minitest.cr
+        version: 0.1.0
+
+**development\_dependencies**  
+A list of dependencies required to work on the project, but not
+necessary to build and run the project (mapping).
+
+They will be installed for the main project or library itself. When the
+library is installed as a dependency for another project the development
+dependencies will never be installed.
+
+Development dependencies follow the same scheme as dependencies.
+
+**Example:**
+
+    development_dependencies:
+      minitest:
+        github: ysbaddaden/minitest.cr
+        version: ~> 0.1.3
+
+**description**  
+A single line description of the project (string, recommended).
+
+**documentation**  
+The URL to a website providing the project’s documentation for online
+browsing (string).
+
+**executables**  
+A list of executables to be installed (sequence).
+
+The executables can be of any type or language (e.g., shell, binary,
+ruby), must exist in the `bin` folder of the Shard, and have the
+executable bit set (on POSIX platforms). When installed as a dependency
+for another project the executables will be copied to the `bin` folder
+of that project.
+
+Executables are always installed last, after the `postinstall` script is
+run, so libraries can build the executables when they are installed by
+Shards.
+
+**Example:**
+
+    executables:
+    - micrate
+    - icr
+
+**homepage**  
+The URL of the project’s homepage (string).
+
+**libraries**  
+A list of shared libraries the shard tries to link to (mapping).
+
+This field is purely informational. It serves as a canonical way to
+discover non Crystal dependencies in shards, both for tools as well as
+humans.
+
+A shard must only list libraries it directly links to, it must not
+include libraries that are only referenced by dependencies. It must
+include all libraries it directly links to, regardless of a dependency
+doing it too.
+
+It should map from the soname without any extension, path or version,
+for example `libsqlite3` for `/usr/lib/libsqlite3.so.0.8.6`, to a
+version constraint.
+
+The version constraint has the following format:
+
+-   It may be a version number.
+
+-   It may be `"*"` if any version will do.
+
+-   The version number may be prefixed by an operator: `<`, `⇐`, `>`,
+    `>=` or `~>`.
+
+    libraries:
+      libQt5Gui: "*"
+      libQt5Help: "~> 5.7"
+      libQtBus: ">= 4.8"
+
+**license**  
+An [OSI license](http://opensource.org/) name or an URL to a license
+file (string, recommended).
+
+**repository**  
+The URL of the project’s canonical repository (string, recommended).
+
+The URL should be compatible with typical VCS tools without
+modifications. `http`/`https` is preferred over VCS schemes like `git`.
+It is recommended that this URL is publicly available.
+
+Copies of a shard (such as mirrors, development forks etc.) should point
+to the same canonical repository address, even if hosted at different
+locations.
+
+**Example:**
+
+    repository: "https://github.com/crystal-lang/shards"
+
+**scripts**  
+Script hooks to run. Only `postinstall` is supported.
+
+Shards may run scripts automatically after certain actions. The scripts
+themselves are mere shell commands.
+
+**postinstall**  
+The `postinstall` hook of a dependency will be run whenever that
+dependency is installed or upgraded in a project that requires it. This
+may be used to compile a C library, to build tools to help working on
+the project, or anything else.
+
+The script will be run from the dependency’s installation directory, for
+example `lib/foo` for a Shard named `foo`.
+
+**Example:**
+
+    scripts:
+      postinstall: cd src/libfoo && make
+
+**targets**  
+A list of targets to build (mapping).
+
+Each target begins with the name of the target as a key (string), then a
+list of attributes (mapping). The target name is the built binary name,
+created in the `bin` folder of the project.
+
+**Example:**
+
+    targets:
+      server:
+        main: src/server/cli.cr
+      worker:
+        main: src/worker.cr
+
+The above example will build `bin/server` from `src/server/cli.cr` and
+`bin/worker` from `src/worker.cr`.
+
+**main**  
+A path to the source file to compile (string).
+
+DEPENDENCY ATTRIBUTES
+---------------------
+
+Each dependency needs at least one attribute that defines the resolver
+for this dependency. Those can be `path`, `git`, `github`, `gitlab`,
+`bitbucket`.
+
+**path**  
+A local path (string).
+
+The library will be installed as a symlink to the local path. The
+`version` attribute isn’t required but will be used if present to
+validate the dependency.
+
+**git**  
+A Git repository URL (string).
+
+The URL may be \[any
+protocol\](<a href="https://git-scm.com/docs/git-clone#_git_urls" class="bare">https://git-scm.com/docs/git-clone#_git_urls</a>)
+supported by Git, which includes SSH, GIT and HTTPS.
+
+The Git repository will be cloned, the list of versions (and associated
+`shard.yml`) will be extracted from Git tags (e.g., `v1.2.3`).
+
+One of the other attributes (`version`, `tag`, `branch` or `commit`) is
+required. When missing, Shards will install the HEAD refs.
+
+**Example:** `git: git://git.example.org/crystal-library.git`
+
+**github**  
+GitHub repository URL as `user/repo` (string)
+
+Extends the `git` resolver, and acts exactly like it.
+
+**Example:** `github: ysbaddaden/minitest.cr`
+
+**gitlab**  
+GitLab repository URL as `user/repo` (string).
+
+Extends the `git` resolver, and acts exactly like it.
+
+Only matches dependencies hosted on `gitlab.com`. For personal GitLab
+installations, you must use the generic `git` resolver.
+
+**Example:** `gitlab: thelonlyghost/minitest.cr`
+
+**bitbucket**  
+Bitbucket repository URL as `user/repo` (string).
+
+Extends the `git` resolver, and acts exactly like it.
+
+**Example:** `bitbucket: tom/library`
+
+**version**  
+A version requirement (string).
+
+-   It may be an explicit version number.
+
+-   It may be `"*"` wildcard if any version will do (this is the
+    default). Shards will then install the latest tagged version (or
+    HEAD if no tagged version available).
+
+-   The version number may be prefixed by an operator: `<`, `⇐`, `>`,
+    `>=` or `~>`.
+
+-   Multiple requirements can be separated by commas.
+
+Examples: `1.2.3`, `>= 1.0.0`, `>= 1.0.0, < 2.0` or `~> 2.0`.
+
+Most of the version operators, like `>= 1.0.0`, are self-explanatory,
+but the `~>` operator has a special meaning, best shown by example:
+
+-   `~> 2.0.3` is identical to `>= 2.0.3 and < 2.1`;
+
+-   `~> 2.1` is identical to `>= 2.1 and < 3.0`.
+
+**branch**  
+Install the specified branch of a git dependency (string).
+
+**commit**  
+Install the specified commit of a git dependency (string).
+
+**tag**  
+Install the specified tag of a git dependency (string).
+
+Example:
+--------
+
+Here is an example `shard.yml` for a library named `shards` at version
+`1.2.3` with some dependencies:
+
+    name: shards
+    version: 1.2.3
+    crystal: '>= 0.35.0'
+
+    authors:
+    - Julien Portalier <julien@example.com>
+    license: MIT
+
+    description: |
+      Dependency manager for the Crystal Language
+
+    dependencies:
+      openssl:
+        github: datanoise/openssl.cr
+        branch: master
+
+    development_dependencies:
+      minitest:
+        git: https://github.com/ysbaddaden/minitest.cr.git
+        version: "~> 0.1.0"
+
+    libraries:
+      libgit2: ~> 0.24
+
+    scripts:
+      postinstall: make ext
+
+    targets:
+      shards:
+        main: src/shards.cr
+
+AUTHOR
+------
+
+Written by Julien Portalier and the Crystal project.
+
+SEE ALSO
+--------
+
+**shards**(1)
+
+Last updated 2021-03-15 22:34:06 +0100
