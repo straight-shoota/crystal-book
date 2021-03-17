@@ -16,7 +16,7 @@
     
     
       
-        <title>The Compiler - Crystal</title>
+        <title>Using the compiler - Crystal</title>
       
     
     
@@ -101,7 +101,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              The Compiler
+              Using the compiler
             
           </span>
         </div>
@@ -204,37 +204,16 @@
 
 
 
-  
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item">
+    <a href="../index.html" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
     
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" >
-    
-    <label class="md-nav__link" for="nav-1">
-      <span class="md-nav__icon md-icon"></span>
       
-        <a href="../index.html" class="md-nav__link"
-          style="margin: initial; padding: initial; pointer-events: initial">
       
-        Home
-      </a>
-    </label>
-    <nav class="md-nav" aria-label="Home" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        <span class="md-nav__icon md-icon"></span>
-        
-          <a href="../index.html" class="md-nav__link"
-            style="margin: initial; padding: initial; pointer-events: initial">
-        
-          Home
-        </a>
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
+      
 
 
 
@@ -242,9 +221,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-1" type="checkbox" id="nav-1-1" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
     
-    <label class="md-nav__link" for="nav-1-1">
+    <label class="md-nav__link" for="nav-2">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../getting_started/index.html" class="md-nav__link"
@@ -253,8 +232,8 @@
         Getting started
       </a>
     </label>
-    <nav class="md-nav" aria-label="Getting started" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-1">
+    <nav class="md-nav" aria-label="Getting started" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../getting_started/index.html" class="md-nav__link"
@@ -296,87 +275,217 @@
     </nav>
   </li>
 
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../platform_support.html" class="md-nav__link">
-      Platform Support
-    </a>
-  </li>
-
-        
-          
-          
-          
-
+    
+      
+      
+      
 
 
   
-  <li class="md-nav__item md-nav__item--nested">
+
+
+  <li class="md-nav__item md-nav__item--active">
     
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3" >
-    
-    <label class="md-nav__link" for="nav-1-3">
-      <span class="md-nav__icon md-icon"></span>
       
-        <a href="../conventions/index.html" class="md-nav__link"
-          style="margin: initial; padding: initial; pointer-events: initial">
-      
-        Conventions
-      </a>
-    </label>
-    <nav class="md-nav" aria-label="Conventions" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-3">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../conventions/index.html" class="md-nav__link"
+          <a href="index.html" class="md-nav__link md-nav__link--active"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Conventions
+          Using the compiler
         </a>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
+    
+    <a href="index.html" class="md-nav__link md-nav__link--active">
+      Using the compiler
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#compiling-and-running-at-once" class="md-nav__link">
+    Compiling and running at once
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-executable" class="md-nav__link">
+    Creating an executable
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating an executable">
+      <ul class="md-nav__list">
         
+          <li class="md-nav__item">
+  <a href="#release-builds" class="md-nav__link">
+    Release builds
+  </a>
+  
+</li>
         
-          
-          
-          
+          <li class="md-nav__item">
+  <a href="#creating-a-statically-linked-executable" class="md-nav__link">
+    Creating a statically-linked executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-crystal-project" class="md-nav__link">
+    Creating a Crystal project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compiler-commands" class="md-nav__link">
+    Compiler commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Compiler commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crystal-run" class="md-nav__link">
+    crystal run
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-build" class="md-nav__link">
+    crystal build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-eval" class="md-nav__link">
+    crystal eval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-version" class="md-nav__link">
+    crystal version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-init" class="md-nav__link">
+    crystal init
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-docs" class="md-nav__link">
+    crystal docs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-env" class="md-nav__link">
+    crystal env
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-spec" class="md-nav__link">
+    crystal spec
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-play" class="md-nav__link">
+    crystal play
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-tool" class="md-nav__link">
+    crystal tool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crystal-tool-format" class="md-nav__link">
+    crystal tool format
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    Environment variables
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
 
 
 
   <li class="md-nav__item">
-    <a href="../conventions/coding_style.html" class="md-nav__link">
-      Coding style
+    <a href="../the_shards_command/index.html" class="md-nav__link">
+      The shards command
     </a>
   </li>
 
-        
-          
-          
-          
+    
+      
+      
+      
 
 
 
   <li class="md-nav__item">
-    <a href="../conventions/documenting_code.html" class="md-nav__link">
-      Documenting code
+    <a href="../overview/index.html" class="md-nav__link">
+      About this guide
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -390,42 +499,29 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-6">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Reference
+        Syntax and semantics
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Reference" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+    <nav class="md-nav" aria-label="Syntax and semantics" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Reference
+          Syntax and semantics
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../syntax_and_semantics/program.md" class="md-nav__link">
-      Program
-    </a>
-  </li>
-
         
           
           
@@ -450,9 +546,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2" >
     
-    <label class="md-nav__link" for="nav-2-3">
+    <label class="md-nav__link" for="nav-6-2">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/literals/index.html" class="md-nav__link"
@@ -462,7 +558,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Literals" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-3">
+      <label class="md-nav__title" for="nav-6-2">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/literals/index.html" class="md-nav__link"
@@ -710,9 +806,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5" >
     
-    <label class="md-nav__link" for="nav-2-6">
+    <label class="md-nav__link" for="nav-6-5">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/control_expressions.html" class="md-nav__link"
@@ -722,7 +818,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Control expressions" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-6">
+      <label class="md-nav__title" for="nav-6-5">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/control_expressions.html" class="md-nav__link"
@@ -757,9 +853,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6-2" type="checkbox" id="nav-2-6-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-5-2" type="checkbox" id="nav-6-5-2" >
     
-    <label class="md-nav__link" for="nav-2-6-2">
+    <label class="md-nav__link" for="nav-6-5-2">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/if.html" class="md-nav__link"
@@ -769,7 +865,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="if" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-6-2">
+      <label class="md-nav__title" for="nav-6-5-2">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/if.html" class="md-nav__link"
@@ -926,9 +1022,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6-5" type="checkbox" id="nav-2-6-5" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-5-5" type="checkbox" id="nav-6-5-5" >
     
-    <label class="md-nav__link" for="nav-2-6-5">
+    <label class="md-nav__link" for="nav-6-5-5">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/while.html" class="md-nav__link"
@@ -938,7 +1034,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="while" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-6-5">
+      <label class="md-nav__title" for="nav-6-5-5">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/while.html" class="md-nav__link"
@@ -1048,9 +1144,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-7" type="checkbox" id="nav-6-7" >
     
-    <label class="md-nav__link" for="nav-2-8">
+    <label class="md-nav__link" for="nav-6-7">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/types_and_methods.html" class="md-nav__link"
@@ -1060,7 +1156,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Types and methods" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-8">
+      <label class="md-nav__title" for="nav-6-7">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/types_and_methods.html" class="md-nav__link"
@@ -1108,9 +1204,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-8-3" type="checkbox" id="nav-2-8-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-7-3" type="checkbox" id="nav-6-7-3" >
     
-    <label class="md-nav__link" for="nav-2-8-3">
+    <label class="md-nav__link" for="nav-6-7-3">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/classes_and_methods.html" class="md-nav__link"
@@ -1120,7 +1216,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Classes and methods" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-8-3">
+      <label class="md-nav__title" for="nav-6-7-3">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/classes_and_methods.html" class="md-nav__link"
@@ -1298,9 +1394,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-8-3-13" type="checkbox" id="nav-2-8-3-13" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-7-3-13" type="checkbox" id="nav-6-7-3-13" >
     
-    <label class="md-nav__link" for="nav-2-8-3-13">
+    <label class="md-nav__link" for="nav-6-7-3-13">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/inheritance.html" class="md-nav__link"
@@ -1310,7 +1406,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Inheritance" data-md-level="4">
-      <label class="md-nav__title" for="nav-2-8-3-13">
+      <label class="md-nav__title" for="nav-6-7-3-13">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/inheritance.html" class="md-nav__link"
@@ -1459,9 +1555,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-8-9" type="checkbox" id="nav-2-8-9" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-7-9" type="checkbox" id="nav-6-7-9" >
     
-    <label class="md-nav__link" for="nav-2-8-9">
+    <label class="md-nav__link" for="nav-6-7-9">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/blocks_and_procs.html" class="md-nav__link"
@@ -1471,7 +1567,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Blocks and Procs" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-8-9">
+      <label class="md-nav__title" for="nav-6-7-9">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/blocks_and_procs.html" class="md-nav__link"
@@ -1594,9 +1690,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-11" type="checkbox" id="nav-2-11" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-10" type="checkbox" id="nav-6-10" >
     
-    <label class="md-nav__link" for="nav-2-11">
+    <label class="md-nav__link" for="nav-6-10">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/type_reflection.html" class="md-nav__link"
@@ -1606,7 +1702,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Type reflection" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-11">
+      <label class="md-nav__title" for="nav-6-10">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/type_reflection.html" class="md-nav__link"
@@ -1711,9 +1807,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-12" type="checkbox" id="nav-2-12" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-11" type="checkbox" id="nav-6-11" >
     
-    <label class="md-nav__link" for="nav-2-12">
+    <label class="md-nav__link" for="nav-6-11">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/macros/index.html" class="md-nav__link"
@@ -1723,7 +1819,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Macros" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-12">
+      <label class="md-nav__title" for="nav-6-11">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/macros/index.html" class="md-nav__link"
@@ -1789,9 +1885,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-13" type="checkbox" id="nav-2-13" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-12" type="checkbox" id="nav-6-12" >
     
-    <label class="md-nav__link" for="nav-2-13">
+    <label class="md-nav__link" for="nav-6-12">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/annotations/index.html" class="md-nav__link"
@@ -1801,7 +1897,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Annotations" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-13">
+      <label class="md-nav__title" for="nav-6-12">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/annotations/index.html" class="md-nav__link"
@@ -1841,9 +1937,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-14" type="checkbox" id="nav-2-14" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-13" type="checkbox" id="nav-6-13" >
     
-    <label class="md-nav__link" for="nav-2-14">
+    <label class="md-nav__link" for="nav-6-13">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/low_level_primitives.html" class="md-nav__link"
@@ -1853,7 +1949,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Low-level primitives" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-14">
+      <label class="md-nav__title" for="nav-6-13">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/low_level_primitives.html" class="md-nav__link"
@@ -1945,9 +2041,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-15" type="checkbox" id="nav-2-15" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-14" type="checkbox" id="nav-6-14" >
     
-    <label class="md-nav__link" for="nav-2-15">
+    <label class="md-nav__link" for="nav-6-14">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/compile_time_flags.html" class="md-nav__link"
@@ -1957,7 +2053,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Compile-time flags" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-15">
+      <label class="md-nav__title" for="nav-6-14">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/compile_time_flags.html" class="md-nav__link"
@@ -1997,9 +2093,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-16" type="checkbox" id="nav-2-16" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-15" type="checkbox" id="nav-6-15" >
     
-    <label class="md-nav__link" for="nav-2-16">
+    <label class="md-nav__link" for="nav-6-15">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/c_bindings/index.html" class="md-nav__link"
@@ -2009,7 +2105,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="C bindings" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-16">
+      <label class="md-nav__title" for="nav-6-15">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/c_bindings/index.html" class="md-nav__link"
@@ -2044,9 +2140,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-16-2" type="checkbox" id="nav-2-16-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-15-2" type="checkbox" id="nav-6-15-2" >
     
-    <label class="md-nav__link" for="nav-2-16-2">
+    <label class="md-nav__link" for="nav-6-15-2">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../syntax_and_semantics/c_bindings/fun.html" class="md-nav__link"
@@ -2056,7 +2152,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="fun" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-16-2">
+      <label class="md-nav__title" for="nav-6-15-2">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../syntax_and_semantics/c_bindings/fun.html" class="md-nav__link"
@@ -2231,242 +2327,31 @@
       
 
 
-  
-
-
-  
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    
-    <label class="md-nav__link" for="nav-3">
-      <span class="md-nav__icon md-icon"></span>
-      
-        Manuals
-      
-    </label>
-    <nav class="md-nav" aria-label="Manuals" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon"></span>
-        
-          Manuals
-        
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        <span class="md-nav__icon md-icon"></span>
-        
-          <a href="index.html" class="md-nav__link md-nav__link--active"
-            style="margin: initial; padding: initial; pointer-events: initial">
-        
-          The Compiler
-        </a>
-      </label>
-    
-    <a href="index.html" class="md-nav__link md-nav__link--active">
-      The Compiler
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#compiling-and-running-at-once" class="md-nav__link">
-    Compiling and running at once
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-an-executable" class="md-nav__link">
-    Creating an executable
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating an executable">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#release-builds" class="md-nav__link">
-    Release builds
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-statically-linked-executable" class="md-nav__link">
-    Creating a statically-linked executable
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-crystal-project" class="md-nav__link">
-    Creating a Crystal project
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compiler-commands" class="md-nav__link">
-    Compiler commands
-  </a>
-  
-    <nav class="md-nav" aria-label="Compiler commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#crystal-run" class="md-nav__link">
-    crystal run
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-build" class="md-nav__link">
-    crystal build
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-eval" class="md-nav__link">
-    crystal eval
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-version" class="md-nav__link">
-    crystal version
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-init" class="md-nav__link">
-    crystal init
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-docs" class="md-nav__link">
-    crystal docs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-env" class="md-nav__link">
-    crystal env
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-spec" class="md-nav__link">
-    crystal spec
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-play" class="md-nav__link">
-    crystal play
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-tool" class="md-nav__link">
-    crystal tool
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#crystal-tool-format" class="md-nav__link">
-    crystal tool format
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    Environment variables
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
 
   
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
     
-    <label class="md-nav__link" for="nav-3-2">
+    <label class="md-nav__link" for="nav-7">
       <span class="md-nav__icon md-icon"></span>
       
-        Shards
+        <a href="../conventions/index.html" class="md-nav__link"
+          style="margin: initial; padding: initial; pointer-events: initial">
       
+        Conventions
+      </a>
     </label>
-    <nav class="md-nav" aria-label="Shards" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-2">
+    <nav class="md-nav" aria-label="Conventions" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         
-          Shards
+          <a href="../conventions/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
         
+          Conventions
+        </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -2478,14 +2363,22 @@
 
 
   <li class="md-nav__item">
-    <a href="../the_shards_command/index.html" class="md-nav__link">
-      shards manual
+    <a href="../conventions/coding_style.html" class="md-nav__link">
+      Coding style
     </a>
   </li>
 
         
-      </ul>
-    </nav>
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../conventions/documenting_code.html" class="md-nav__link">
+      Documenting code
+    </a>
   </li>
 
         
@@ -2504,9 +2397,87 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-8">
+      <span class="md-nav__icon md-icon"></span>
+      
+        <a href="../database/index.html" class="md-nav__link"
+          style="margin: initial; padding: initial; pointer-events: initial">
+      
+        Database
+      </a>
+    </label>
+    <nav class="md-nav" aria-label="Database" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../database/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Database
+        </a>
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../database/connection.html" class="md-nav__link">
+      Connection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../database/connection_pool.html" class="md-nav__link">
+      Connection pool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../database/transactions.html" class="md-nav__link">
+      Transactions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
+    
+    <label class="md-nav__link" for="nav-9">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../guides/index.html" class="md-nav__link"
@@ -2516,7 +2487,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Guides" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-9">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../guides/index.html" class="md-nav__link"
@@ -2577,9 +2548,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9-4" type="checkbox" id="nav-9-4" >
     
-    <label class="md-nav__link" for="nav-4-4">
+    <label class="md-nav__link" for="nav-9-4">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../guides/writing_shards.html" class="md-nav__link"
@@ -2589,7 +2560,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Writing Shards" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-4">
+      <label class="md-nav__title" for="nav-9-4">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../guides/writing_shards.html" class="md-nav__link"
@@ -2642,9 +2613,9 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9-5" type="checkbox" id="nav-9-5" >
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-9-5">
       <span class="md-nav__icon md-icon"></span>
       
         <a href="../guides/ci/index.html" class="md-nav__link"
@@ -2654,7 +2625,7 @@
       </a>
     </label>
     <nav class="md-nav" aria-label="Continuous Integration" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-9-5">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../guides/ci/index.html" class="md-nav__link"
@@ -2710,84 +2681,6 @@
   </li>
 
         
-          
-          
-          
-
-
-
-  
-  <li class="md-nav__item md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7" >
-    
-    <label class="md-nav__link" for="nav-4-7">
-      <span class="md-nav__icon md-icon"></span>
-      
-        <a href="../database/index.html" class="md-nav__link"
-          style="margin: initial; padding: initial; pointer-events: initial">
-      
-        Database
-      </a>
-    </label>
-    <nav class="md-nav" aria-label="Database" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-7">
-        <span class="md-nav__icon md-icon"></span>
-        
-          <a href="../database/index.html" class="md-nav__link"
-            style="margin: initial; padding: initial; pointer-events: initial">
-        
-          Database
-        </a>
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../database/connection.html" class="md-nav__link">
-      Connection
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../database/connection_pool.html" class="md-nav__link">
-      Connection pool
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../database/transactions.html" class="md-nav__link">
-      Transactions
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -2800,8 +2693,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/README.md" class="md-nav__link">
-      Tutorials
+    <a href="../platform_support.html" class="md-nav__link">
+      Platform Support
     </a>
   </li>
 
@@ -3152,7 +3045,7 @@ in its repository and no build target in <code>shard.yml</code>, but instruction
 <span class="go">Initialized empty Git repository in ~/my_cool_lib/.git/</span>
 </code></pre></div>
 <h3 id="crystal-docs"><code>crystal docs</code><a class="headerlink" href="#crystal-docs" title="Permanent link">&para;</a></h3>
-<p>The <code>crystal docs</code> command generates API documentation from inline docstrings in Crystal files (see <a href="../conventions/documenting_code.html">documenting code</a>).</p>
+<p>The <code>crystal docs</code> command generates API documentation from inline docstrings in Crystal files (see <a href="../conventions/documenting_code.html"><em>Documenting Code</em></a>).</p>
 <div class="highlight"><pre><span></span><code>crystal docs <span class="o">[</span>--output<span class="o">=</span>&lt;output_dir&gt;<span class="o">]</span> <span class="o">[</span>--canonical-base-url<span class="o">=</span>&lt;url&gt;<span class="o">]</span> <span class="o">[</span>&lt;source_file&gt;...<span class="o">]</span>
 </code></pre></div>
 <p>The command creates a static website in <code>output_dir</code> (default <code>./docs</code>), consisting of HTML files for each Crystal type,
@@ -3259,6 +3152,7 @@ the other arguments by a double dash (<code>--</code>).</p>
 </code></pre></div>
 <p><code>path</code> can be a file or folder name and include all Crystal files in that folder tree. Omitting <code>path</code> is equal to
 specifying the current working directory.</p>
+<p>The formatter also applies to Crystal code blocks in comments (see <a href="../conventions/documenting_code.html"><em>Documenting Code</em></a>).</p>
 <h2 id="environment-variables">Environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
 <p>The following environment variables are used by the Crystal compiler if set in the environment. Otherwise the compiler will populate them with default values. Their values can be inspected using <a href="#crystal-env"><code>crystal env</code></a>.</p>
 <ul>
@@ -3286,7 +3180,7 @@ specifying the current working directory.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../syntax_and_semantics/unsafe.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../getting_started/cli.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -3295,7 +3189,7 @@ specifying the current working directory.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Unsafe code
+                A Command Line Application
               </div>
             </div>
           </a>
@@ -3307,7 +3201,7 @@ specifying the current working directory.</p>
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                shards manual
+                The shards command
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
