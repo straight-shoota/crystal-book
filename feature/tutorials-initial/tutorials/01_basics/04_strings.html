@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/tutorials/01_introduction/04_strings.html">
+        <link rel="canonical" href="https://crystal-lang.org/reference/tutorials/01_basics/04_strings.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
-        <title>String Operations - Crystal</title>
+        <title>Strings - Crystal</title>
       
     
     
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -107,7 +107,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              String Operations
+              Strings
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -2587,17 +2587,17 @@
         <a href="index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Introduction
+        Basics
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Introduction" data-md-level="2">
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
       <label class="md-nav__title" for="nav-11-1">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Introduction
+          Basics
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2636,8 +2636,8 @@
 
 
   <li class="md-nav__item">
-    <a href="03_methods.html" class="md-nav__link">
-      Methods
+    <a href="03_math.html" class="md-nav__link">
+      Math
     </a>
   </li>
 
@@ -2657,10 +2657,146 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="04_strings.html" class="md-nav__link md-nav__link--active"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Strings
+        </a>
+      </label>
+    
     <a href="04_strings.html" class="md-nav__link md-nav__link--active">
-      String Operations
+      Strings
     </a>
     
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation" class="md-nav__link">
+    Interpolation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escaping" class="md-nav__link">
+    Escaping
+  </a>
+  
+    <nav class="md-nav" aria-label="Escaping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-delimiters" class="md-nav__link">
+    Alternative Delimiters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unicode" class="md-nav__link">
+    Unicode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformation" class="md-nav__link">
+    Transformation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parts-of-a-string" class="md-nav__link">
+    Parts of a string
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dissection" class="md-nav__link">
+    Dissection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparison" class="md-nav__link">
+    Comparison
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regex" class="md-nav__link">
+    Regex (?)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteration" class="md-nav__link">
+    Iteration (?)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="05_control_flow.html" class="md-nav__link">
+      Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="06_methods.html" class="md-nav__link">
+      Methods
+    </a>
   </li>
 
         
@@ -2705,6 +2841,97 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation" class="md-nav__link">
+    Interpolation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escaping" class="md-nav__link">
+    Escaping
+  </a>
+  
+    <nav class="md-nav" aria-label="Escaping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternative-delimiters" class="md-nav__link">
+    Alternative Delimiters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unicode" class="md-nav__link">
+    Unicode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformation" class="md-nav__link">
+    Transformation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parts-of-a-string" class="md-nav__link">
+    Parts of a string
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dissection" class="md-nav__link">
+    Dissection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparison" class="md-nav__link">
+    Comparison
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regex" class="md-nav__link">
+    Regex (?)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteration" class="md-nav__link">
+    Iteration (?)
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2715,19 +2942,107 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_introduction/04_strings.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_basics/04_strings.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
                 <h1 id="string-operations">String Operations<a class="headerlink" href="#string-operations" title="Permanent link">&para;</a></h1>
 <p>In the previous lessons we have already made an acquaintance with a major building block
-of most programs: strings. Let's recapitulate their basic properties:</p>
-<p>A <a href="https://en.wikipedia.org/wiki/String_(computer_science)">string</a> is a sequence of characters.
-Characters are encoded in <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a>.
+of most programs: strings. Let's recapitulate the basic properties:</p>
+<p>A <a href="https://en.wikipedia.org/wiki/String_(computer_science)">string</a> is a sequence of <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> characters encoded in <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a>.
 A string is <a href="https://en.wikipedia.org/wiki/Immutable_object">immutable</a>:
 If you apply a modification to a string, you actually get a new string with the
 modified content. The original string stays the same.</p>
+<p>Strings are written as literals typically enclosed in double quote characters (<code>"</code>).</p>
+<h2 id="interpolation">Interpolation<a class="headerlink" href="#interpolation" title="Permanent link">&para;</a></h2>
+<p>String interpolation is a convenient method for combining strings: <code>#{...}</code> inside a string literal inserts the value of the expression between the curly braces at this position of the string.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Crystal&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>The expression inside an interpolation should be kept short to either a variable or a simple method call. More complex expressions reduce code readability.</p>
+<p>The value of the expression doesn't need to be a string. Any type will do and it gets converted to a string representation by calling the <code>#to_s</code> method. This method is defined for any object. Let's try with a number:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An alternative to interpolation is concatenation. Instead of <code>"Hello #{name}!"</code> you could write <code>"Hello " + name + "!"</code>. But that's bulkier and has some gotchas with non-string types. Interpolation is generally preferred over concatenation.</p>
+</div>
+<h2 id="escaping">Escaping<a class="headerlink" href="#escaping" title="Permanent link">&para;</a></h2>
+<p>Some characters can't be written directly in string literals. For example a double quote: If used inside a string, the compiler would interpret it as the end delimiter.</p>
+<p>The solution to this problem is escaping: If a double quote is preceded by a backslash (<code>\</code>), it's interpreted as an escape sequence and both characters together encode a double quote character.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="nb">puts</span> <span class="s2">&quot;I say: </span><span class="se">\&quot;</span><span class="s2">Hello World!</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>There are other escape sequences: For example non printable characters such as a line break (<code>\n</code>) or a tabulator (<code>\t</code>). If you want to write a literal backslash, the escape sequence is a double backslash (<code>\\</code>). The null character (codepoint <code>0</code>) is a regular character in Crystal strings. In some programming languages this character denotes the end of a string, but in Crystal it's only determined by its <code>#size</code> property.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="nb">puts</span> <span class="s2">&quot;I say: </span><span class="se">\&quot;</span><span class="s2">Hello </span><span class="se">\\\n\t</span><span class="s2">World!</span><span class="se">\&quot;</span><span class="s2">&quot;</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can find more info on available escape sequences in the <a href="../../syntax_and_semantics/literals/string.html#escaping">string literal reference</a>.</p>
+</div>
+<h3 id="alternative-delimiters">Alternative Delimiters<a class="headerlink" href="#alternative-delimiters" title="Permanent link">&para;</a></h3>
+<p>Some string literals may contain a lot of double quotes – think of HTML tags with quoted argument values for example. It would be cumbersome to have to escape each one with a backslash. Alternative literal delimiters are a convenient alternative. <code>%(...)</code> is equivalent to <code>"..."</code> except that the delimiters are denoted by parentheses (<code>(</code> and <code>)</code>) instead of double quotes.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="nb">puts</span> <span class="sx">%(I say: &quot;Hello World!&quot;)</span>
+</code></pre></div>
+<p>Escape sequences and interpolation still works the same way.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can find more info on alternative delimiters in the <a href="../../syntax_and_semantics/literals/string.html#percent-string-literals">string literal reference</a>.</p>
+</div>
+<h2 id="unicode">Unicode<a class="headerlink" href="#unicode" title="Permanent link">&para;</a></h2>
+<p>Unicode is an international standard for representing text in many different writing systems. Besides letters of the latin alphabet used by English and many other languages, it includes several other character sets. Not just for plain text, but the Unicode standard also includes emojis and icons.</p>
+<p>The following example uses the unicode character <a href="https://codepoints.net/U+1F310"><code>U+1F310</code> (<em>Globe with Meridians</em>)</a> to address the world:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="nb">puts</span> <span class="s2">&quot;Hello 🌐&quot;</span>
+</code></pre></div>
+<p>Working with unicode symbols can be a bit tricky sometimes. Some characters may not be supported by your editor font, some characters are not even printable. As an alternative, Unicode characters can be expressed as an escape sequence. A backslash followed by the letter <code>u</code> denotes a Unicode codepoint. The codepoint value is written as hexadecimal digits enclosed in curly braces. The curly braces can be omitted if the codepoint has exactly four digits.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="se">\u{1F310}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<h2 id="transformation">Transformation<a class="headerlink" href="#transformation" title="Permanent link">&para;</a></h2>
+<p>Consider you want to change something about a string. Maybe scream the message and make it all uppercase?
+The method <code>String#upcase</code> converts all lower case characters to their upper case equivalent.
+The opposite is <code>String#downcase</code>. There are a couple more similar methods, which let us express our message in different
+styles:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World! Greetings from Crystal.&quot;</span>
+
+<span class="nb">puts</span> <span class="s2">&quot;normal: </span><span class="si">#{</span><span class="n">message</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;upcased: </span><span class="si">#{</span><span class="n">message</span><span class="o">.</span><span class="n">upcase</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;downcased: </span><span class="si">#{</span><span class="n">message</span><span class="o">.</span><span class="n">downcase</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;camelcased: </span><span class="si">#{</span><span class="n">message</span><span class="o">.</span><span class="n">camelcase</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;capitalized: </span><span class="si">#{</span><span class="n">message</span><span class="o">.</span><span class="n">capitalize</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;reversed: </span><span class="si">#{</span><span class="n">message</span><span class="o">.</span><span class="n">reverse</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;titleized: </span><span class="si">#{</span><span class="n">message</span><span class="o">.</span><span class="n">titleize</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;underscored: </span><span class="si">#{</span><span class="n">message</span><span class="o">.</span><span class="n">underscore</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>The methods <code>#camelcased</code> and <code>#underscored</code> don't change our string, but try them with <code>"snake_cased"</code> or <code>"CamelCased"</code>.</p>
+<h2 id="information">Information<a class="headerlink" href="#information" title="Permanent link">&para;</a></h2>
+<p>Let's look a bit more detailed at a string and what we can know about it. First of all, a string
+has a length, i.e. the number of characters it contains. This value is available as <code>String#size</code>.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World! Greetings from Crystal.&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">size</span>
+</code></pre></div>
+<p>To determine if a string is empty, you can check if the size is zero, or just use the short hand <code>String#empty?</code>:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">empty_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+<span class="bp">p!</span> <span class="n">empty_string</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span>
+   <span class="n">empty_string</span><span class="o">.</span><span class="n">empty?</span>
+</code></pre></div>
+<p>The method <code>String#blank?</code> returns <code>true</code> if the string is empty or if it contains only of whitespace characters. A related method is <code>String#presence</code> which returns <code>nil</code> if the string is blank, otherwise the string itself.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">blank_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+<span class="bp">p!</span> <span class="n">blank_string</span><span class="o">.</span><span class="n">blank?</span><span class="p">,</span>
+   <span class="n">blank_string</span><span class="o">.</span><span class="n">presence</span>
+</code></pre></div>
+<h2 id="parts-of-a-string">Parts of a string<a class="headerlink" href="#parts-of-a-string" title="Permanent link">&para;</a></h2>
+<h2 id="dissection">Dissection<a class="headerlink" href="#dissection" title="Permanent link">&para;</a></h2>
+<h2 id="comparison">Comparison<a class="headerlink" href="#comparison" title="Permanent link">&para;</a></h2>
+<h2 id="regex">Regex (?)<a class="headerlink" href="#regex" title="Permanent link">&para;</a></h2>
+<h2 id="iteration">Iteration (?)<a class="headerlink" href="#iteration" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can find more detailed info in the <a href="../../syntax_and_semantics/literals/string.html">string literal reference</a> and <a href="https://crystal-lang.org/api/latest/String.html">String API docs</a>.</p>
+</div>
                 
               
               
@@ -2746,7 +3061,7 @@ modified content. The original string stays the same.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="03_methods.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="03_math.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2755,19 +3070,19 @@ modified content. The original string stays the same.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Methods
+                Math
               </div>
             </div>
           </a>
         
         
-          <a href="../xx_types/index.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="05_control_flow.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Types
+                Control Flow
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

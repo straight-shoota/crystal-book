@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/tutorials/01_introduction/03_methods.html">
+        <link rel="canonical" href="https://crystal-lang.org/reference/tutorials/01_basics/05_control_flow.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
-        <title>Methods - Crystal</title>
+        <title>Control Flow - Crystal</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#methods" class="md-skip">
+        <a href="#control-flow" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -107,7 +107,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Methods
+              Control Flow
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -2587,17 +2587,17 @@
         <a href="index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Introduction
+        Basics
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Introduction" data-md-level="2">
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
       <label class="md-nav__title" for="nav-11-1">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Introduction
+          Basics
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2634,6 +2634,32 @@
           
 
 
+
+  <li class="md-nav__item">
+    <a href="03_math.html" class="md-nav__link">
+      Math
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="04_strings.html" class="md-nav__link">
+      Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   
 
 
@@ -2647,15 +2673,15 @@
       <label class="md-nav__link md-nav__link--active" for="__toc">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="03_methods.html" class="md-nav__link md-nav__link--active"
+          <a href="05_control_flow.html" class="md-nav__link md-nav__link--active"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Methods
+          Control Flow
         </a>
       </label>
     
-    <a href="03_methods.html" class="md-nav__link md-nav__link--active">
-      Methods
+    <a href="05_control_flow.html" class="md-nav__link md-nav__link--active">
+      Control Flow
     </a>
     
       
@@ -2672,16 +2698,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    Arguments
+  <a href="#primitive-types" class="md-nav__link">
+    Primitive Types
   </a>
   
-    <nav class="md-nav" aria-label="Arguments">
+    <nav class="md-nav" aria-label="Primitive Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#default-arguments" class="md-nav__link">
-    Default arguments
+  <a href="#nil" class="md-nav__link">
+    Nil
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bool" class="md-nav__link">
+    Bool
   </a>
   
 </li>
@@ -2692,15 +2725,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#type-restrictions" class="md-nav__link">
-    Type Restrictions
+  <a href="#boolean-algebra" class="md-nav__link">
+    Boolean Algebra
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#overloading" class="md-nav__link">
-    Overloading
+  <a href="#conditionals" class="md-nav__link">
+    Conditionals
   </a>
   
 </li>
@@ -2719,8 +2752,8 @@
 
 
   <li class="md-nav__item">
-    <a href="04_strings.html" class="md-nav__link">
-      String Operations
+    <a href="06_methods.html" class="md-nav__link">
+      Methods
     </a>
   </li>
 
@@ -2773,16 +2806,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#arguments" class="md-nav__link">
-    Arguments
+  <a href="#primitive-types" class="md-nav__link">
+    Primitive Types
   </a>
   
-    <nav class="md-nav" aria-label="Arguments">
+    <nav class="md-nav" aria-label="Primitive Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#default-arguments" class="md-nav__link">
-    Default arguments
+  <a href="#nil" class="md-nav__link">
+    Nil
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bool" class="md-nav__link">
+    Bool
   </a>
   
 </li>
@@ -2793,15 +2833,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#type-restrictions" class="md-nav__link">
-    Type Restrictions
+  <a href="#boolean-algebra" class="md-nav__link">
+    Boolean Algebra
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#overloading" class="md-nav__link">
-    Overloading
+  <a href="#conditionals" class="md-nav__link">
+    Conditionals
   </a>
   
 </li>
@@ -2818,99 +2858,57 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_introduction/03_methods.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_basics/05_control_flow.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h1>
-<p>To avoid duplication of the same message, instead of using a variable we can
-define a method and call it multiple times.</p>
-<p>A method definition is indicated by the keyword <code>def</code> followed by the method name.
-Every expression until the keyword <code>end</code> is part of the method body.</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-<span class="k">end</span>
-
-<span class="n">say_hello</span>
-<span class="n">say_hello</span>
-<span class="n">say_hello</span><span class="p">()</span> <span class="c1"># syntactically equivalent method call with parenthesis</span>
+                <h1 id="control-flow">Control Flow<a class="headerlink" href="#control-flow" title="Permanent link">&para;</a></h1>
+<h2 id="primitive-types">Primitive Types<a class="headerlink" href="#primitive-types" title="Permanent link">&para;</a></h2>
+<h3 id="nil">Nil<a class="headerlink" href="#nil" title="Permanent link">&para;</a></h3>
+<p>The most simplistic type is <code>Nil</code>. It has only a single value: <code>nil</code> and represents
+the absence of an actual value. If you ask which car occupies a parking spot, and
+no car is parking there, the answer is <code>nil</code>.</p>
+<h3 id="bool">Bool<a class="headerlink" href="#bool" title="Permanent link">&para;</a></h3>
+<p>The <code>Bool</code> type has just two possible values: <code>true</code> and <code>false</code> which represent the
+truth values of logic and Boolean algebra.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! true, false
 </code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Method calls are unambiguously indicated by parenthesis after the name, but it can be omitted. It would only be
-necessary for disambiguation, for example if <code>say_hello</code> was also a local variable.</p>
-</div>
-<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
-<p>What if we want to greet different people, but all in the same manner?
-Instead of writing individual messages, we can define a method that allows customization through a parameter.
-A parameter is like a local variable inside the method body. Parameters are declared after the method name in parenthesis.
-When calling a method, you can pass in arguments which are mapped as values for the method's parameters.</p>
-<p>The example contains another new concept called string interpolation: <code>#{...}</code> inserts the value of the expression
-between the curly braces at this position of the string.</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">recipient</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">recipient</span><span class="si">}</span><span class="s2">!&quot;</span>
-<span class="k">end</span>
+<p><a href="https://en.wikipedia.org/wiki/Boolean_data_type">Boolean values</a> are particularly useful for
+managing control flow in a program.</p>
+<h2 id="boolean-algebra">Boolean Algebra<a class="headerlink" href="#boolean-algebra" title="Permanent link">&para;</a></h2>
+<p>The following example shows operators for implementing <a href="https://en.wikipedia.org/wiki/Boolean_algebra">boolean algebra</a> with
+boolean values:</p>
+<div class="crystal-play highlight"><pre><span></span><code>a = true
+b = false
 
-<span class="n">say_hello</span> <span class="s2">&quot;World&quot;</span>
-<span class="n">say_hello</span> <span class="s2">&quot;Crystal&quot;</span>
+p! a &amp;&amp; b, # AND
+   a || b, # OR
+   !a,     # NOT
+   a != b, # XOR
+   a == b  # equivalence
 </code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Arguments at method calls are typically placed in parenthesis, but it can often be omitted. <code>say_hello "World"</code>
-and <code>say_hello("World")</code> are syntactically equivalent.</p>
-<p>It's generally recommended to use parenthesis because it avoids ambiguity. But they're often omitted if the
-expression reads like natural language.</p>
-</div>
-<h3 id="default-arguments">Default arguments<a class="headerlink" href="#default-arguments" title="Permanent link">&para;</a></h3>
-<p>Arguments can be assigned a default value. It is used in case the argument is missing in the method call. Usually,
-arguments are mandatory but when there's a default value, it can be omitted.</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">recipient</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">recipient</span><span class="si">}</span><span class="s2">!&quot;</span>
-<span class="k">end</span>
+<p>You can try flicking the values of <code>a</code> and <code>b</code> to see the operator behaviour for different input values.</p>
+<p>Boolean algebra however is not only defined for boolean types proper. All values have an implicit truthiness: <code>nil</code>, <code>false</code>
+and null pointers (just for completeness, will be covered later) are <em>falsey</em>. Any other value is <em>truthy</em>.</p>
+<p>Let's replace <code>true</code> and <code>false</code> in the above example with other values, for example <code>"foo"</code> and <code>nil</code>.</p>
+<div class="crystal-play highlight"><pre><span></span><code>a = &quot;foo&quot;
+b = nil
 
-<span class="n">say_hello</span>
-<span class="n">say_hello</span> <span class="s2">&quot;Crystal&quot;</span>
+p! a &amp;&amp; b, # AND
+   a || b, # OR
+   !a,     # NOT
+   a != b, # XOR
+   a == b  # equivalence
 </code></pre></div>
-<h2 id="type-restrictions">Type Restrictions<a class="headerlink" href="#type-restrictions" title="Permanent link">&para;</a></h2>
-<p>Our example method expects <code>recipient</code> to be a <code>String</code>. But any other type would work as well. Try <code>say_hello 6</code>
-for example.</p>
-<p>This isn't necessarily a problem for this method. Using any other type would be valid code.
-But semantically we want to greet people with a name as a <code>String</code>.</p>
-<p>Type restrictions limit the allowed type of an argument. They come after the argument name, separated by a colon:</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">recipient</span> <span class="p">:</span> <span class="n">String</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">recipient</span><span class="si">}</span><span class="s2">!&quot;</span>
-<span class="k">end</span>
-
-<span class="n">say_hello</span> <span class="s2">&quot;World&quot;</span>
-<span class="n">say_hello</span> <span class="s2">&quot;Crystal&quot;</span>
-
-<span class="c1"># Now this expression doesn&#39;t compile:</span>
-<span class="c1"># say_hello 6</span>
+<p>The <code>AND</code> and <code>OR</code> operators return the first operand value matching the operator's truthiness.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! &quot;foo&quot; &amp;&amp; nil
+p! &quot;foo&quot; &amp;&amp; false
+p! false || &quot;foo&quot;
+p! &quot;bar&quot; || &quot;foo&quot;
 </code></pre></div>
-<p>Now names cannot be numbers or other data types anymore. This doesn't mean you can't
-greet people with a number as a name. The number just needs to be expressed as a string.
-Try <code>say_hello "6"</code> for example.</p>
-<h2 id="overloading">Overloading<a class="headerlink" href="#overloading" title="Permanent link">&para;</a></h2>
-<p>Restricting the type of an argument can be used for positional overloading.
-When a method has an unrestricted argument like <code>say_hello(recipient)</code>, <em>all</em> calls to a method <code>say_hello</code> go to that method.
-But with overloading several methods of the same name can exist with different argument type restrictions. Each call is routed
-to the most fitting overload.</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="c1"># This methods greets *recipient*.</span>
-<span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">recipient</span> <span class="p">:</span> <span class="n">String</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">recipient</span><span class="si">}</span><span class="s2">!&quot;</span>
-<span class="k">end</span>
-
-<span class="c1"># This method greets *times* times.</span>
-<span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">times</span> <span class="p">:</span> <span class="n">Int32</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hello &quot;</span> <span class="o">*</span> <span class="n">times</span>
-<span class="k">end</span>
-
-<span class="n">say_hello</span> <span class="s2">&quot;World&quot;</span>
-<span class="n">say_hello</span> <span class="mi">3</span>
-</code></pre></div>
-<p>Overloading is not only defined by type restrictions. The number of arguments as well as named arguments are also
-relevant characteristics.</p>
+<p>The <code>NOT</code>, <code>XOR</code> and equivalence operators always return a <code>Bool</code> value (<code>true</code> or <code>false</code>).</p>
+<h2 id="conditionals">Conditionals<a class="headerlink" href="#conditionals" title="Permanent link">&para;</a></h2>
                 
               
               
@@ -2929,7 +2927,7 @@ relevant characteristics.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="02_variables.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="04_strings.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2938,19 +2936,19 @@ relevant characteristics.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Variables
+                Strings
               </div>
             </div>
           </a>
         
         
-          <a href="04_strings.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="06_methods.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                String Operations
+                Methods
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

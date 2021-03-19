@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/tutorials/01_introduction/02_variables.html">
+        <link rel="canonical" href="https://crystal-lang.org/reference/tutorials/01_basics/03_math.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
-        <title>Variables - Crystal</title>
+        <title>Math - Crystal</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#variables" class="md-skip">
+        <a href="#math" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -107,7 +107,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Variables
+              Math
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -2587,17 +2587,17 @@
         <a href="index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Introduction
+        Basics
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Introduction" data-md-level="2">
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
       <label class="md-nav__title" for="nav-11-1">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Introduction
+          Basics
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2621,6 +2621,19 @@
           
 
 
+
+  <li class="md-nav__item">
+    <a href="02_variables.html" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   
 
 
@@ -2634,15 +2647,15 @@
       <label class="md-nav__link md-nav__link--active" for="__toc">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="02_variables.html" class="md-nav__link md-nav__link--active"
+          <a href="03_math.html" class="md-nav__link md-nav__link--active"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Variables
+          Math
         </a>
       </label>
     
-    <a href="02_variables.html" class="md-nav__link md-nav__link--active">
-      Variables
+    <a href="03_math.html" class="md-nav__link md-nav__link--active">
+      Math
     </a>
     
       
@@ -2659,22 +2672,69 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#type" class="md-nav__link">
-    Type
+  <a href="#numeric-types" class="md-nav__link">
+    Numeric types
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reassigning-a-value" class="md-nav__link">
-    Reassigning a Value
+  <a href="#arithmetic" class="md-nav__link">
+    Arithmetic
   </a>
+  
+    <nav class="md-nav" aria-label="Arithmetic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equality-and-comparison" class="md-nav__link">
+    Equality and Comparison
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+    <nav class="md-nav" aria-label="Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precedence" class="md-nav__link">
+    Precedence
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number-methods" class="md-nav__link">
+    Number Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#math-methods" class="md-nav__link">
+    Math Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#type-declaration" class="md-nav__link">
-    Type Declaration
+  <a href="#constants" class="md-nav__link">
+    Constants
   </a>
   
 </li>
@@ -2693,8 +2753,8 @@
 
 
   <li class="md-nav__item">
-    <a href="03_methods.html" class="md-nav__link">
-      Methods
+    <a href="04_strings.html" class="md-nav__link">
+      Strings
     </a>
   </li>
 
@@ -2706,8 +2766,21 @@
 
 
   <li class="md-nav__item">
-    <a href="04_strings.html" class="md-nav__link">
-      String Operations
+    <a href="05_control_flow.html" class="md-nav__link">
+      Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="06_methods.html" class="md-nav__link">
+      Methods
     </a>
   </li>
 
@@ -2760,22 +2833,69 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#type" class="md-nav__link">
-    Type
+  <a href="#numeric-types" class="md-nav__link">
+    Numeric types
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reassigning-a-value" class="md-nav__link">
-    Reassigning a Value
+  <a href="#arithmetic" class="md-nav__link">
+    Arithmetic
   </a>
+  
+    <nav class="md-nav" aria-label="Arithmetic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equality-and-comparison" class="md-nav__link">
+    Equality and Comparison
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+    <nav class="md-nav" aria-label="Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precedence" class="md-nav__link">
+    Precedence
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number-methods" class="md-nav__link">
+    Number Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#math-methods" class="md-nav__link">
+    Math Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#type-declaration" class="md-nav__link">
-    Type Declaration
+  <a href="#constants" class="md-nav__link">
+    Constants
   </a>
   
 </li>
@@ -2792,75 +2912,111 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_introduction/02_variables.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_basics/03_math.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h1>
-<p>In order to store a value and re-use it later, it can be assigned to a variable.</p>
-<p>For example, if you want to say <code>Hello Penny!</code> three times, you don't need to repeat the same string multiple times.
-Instead, you can assign it to a local variable and re-use it:</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-
-<span class="nb">puts</span> <span class="n">message</span>
-<span class="nb">puts</span> <span class="n">message</span>
-<span class="nb">puts</span> <span class="n">message</span>
+                <h1 id="math">Math<a class="headerlink" href="#math" title="Permanent link">&para;</a></h1>
+<h2 id="numeric-types">Numeric types<a class="headerlink" href="#numeric-types" title="Permanent link">&para;</a></h2>
+<p>The two most common number types are <code>Int32</code> and <code>Float64</code>. The number in the name denotes the size in bits: <code>Int32</code> is a 32-bit <a href="https://en.wikipedia.org/wiki/Integer_(computer_science)">integer type</a>, <code>Float64</code> is a 64-bit <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">floating point number</a>.</p>
+<ul>
+<li>An integer literal is written as a series of one ore more base-10 digits (<code>0-9</code>) without leading zeros. The default type is <code>Int32</code>.</li>
+<li>A floating point literal is written as a series of two or more base-10 digits (<code>0-9</code>) with a point (<code>.</code>) somewhere in the middle,
+  indicating the decimal point. The default type is <code>Float64</code>.</li>
+</ul>
+<p>All numeric types allow underscores at any place in the middle. This is useful to write large numbers in a more readable way: <code>100000</code> can be written as <code>100_000</code>.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! 1, typeof(1)
+p! 1.0, typeof(1.0)
+p! 100_000, typeof(100_000)
+p! 100_000.0, typeof(100_000.0)
 </code></pre></div>
-<p>This program prints the string <code>Hello Penny!</code> three times to the standard output, each followed by a line break.</p>
-<p>The name of a local variable always starts with a lowercase <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> letter (or an underscore, but that's reserved for special use cases) and can otherwise consist of alphanumeric characters or underscores. As a typical convention, upper-case letter are avoided and names are written in <code>snake_case</code>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Other kinds of variables will be introduced later. For now we focus on local variables only.</p>
+<p>Float values print with with a decimal point. Integer values don't.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>There are quite a few more numeric types, but most of them are intended only for special use cases such as binary protocols,
+specific numeric algorithms and performance optimization. You probably don't need them for every-day programs.</p>
+<p>See <a href="../../syntax_and_semantics/literals/integers.html">Integer literal reference</a> and <a href="../../syntax_and_semantics/literals/floats.html">Float literal reference</a>
+for a full reference on all primitive number types and alternative representations.</p>
 </div>
-<h2 id="type">Type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h2>
-<p>The type of local variable is automatically inferred by the compiler. In the above example, it's <a href="https://crystal-lang.org/api/String.cr"><code>String</code></a>.</p>
-<p>You can verify this with <a href="https://crystal-lang.org/api/toplevel.html#typeof(*expression):Class-class-method"><code>typeof</code></a>:</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-
-<span class="bp">p!</span> <span class="kp">typeof</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<h2 id="arithmetic">Arithmetic<a class="headerlink" href="#arithmetic" title="Permanent link">&para;</a></h2>
+<h3 id="equality-and-comparison">Equality and Comparison<a class="headerlink" href="#equality-and-comparison" title="Permanent link">&para;</a></h3>
+<p>Numbers of the same numerical value are considered equal regarding the equality operator <code>==</code>, independent of their type.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! 1 == 1,
+   1 == 2,
+   1.0 == 1,
+   -2000.0 == -2000
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><a href="https://crystal-lang.org/api/toplevel.html#p!(*exps)-macro"><code>p!</code></a> is similar to <code>puts</code> as it prints the value to the standard output, but it also prints the expression in code. This makes it a useful tool for inspecting the state of a Crystal program and debugging.</p>
+<p>Besides the equality operator, there are also comparison operators. They determine the relationship between two values.
+As with equality, comparability is also independent of type.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! 2 &gt; 1,
+   1 &gt;= 1,
+   1 &lt; 2,
+   1 &lt;= 2
+</code></pre></div>
+<p>The main comparison operator is <code>&lt;=&gt;</code>, also called <em>Spaceship operator</em> for its appearance. It compares its operands and returns a value that is either zero (both operands are equal),
+a negative value (the first operand is bigger), or a positive value (the second operand is bigger).</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! 1 &lt;=&gt; 1,
+   2 &lt;=&gt; 1,
+   1 &lt;=&gt; 2
+</code></pre></div>
+<h3 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link">&para;</a></h3>
+<p>Basic arithmetic operations can be performed with operators. Most operators are <em>binary</em> (i.e. two operands), and
+written in infix notation (i.e. between the operands). Some operators are <em>unary</em> (i.e. one operand), and written in prefix
+notation (i.e. before the operand).
+The value of the expression is the result of the operation.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! 1 + 1,  # addition
+   1 - 1,  # subtraction
+   2 * 3,  # multiplication
+   2 ** 4, # exponentiation
+   2 / 3,  # division
+   2 // 3, # floor division
+   3 % 2,  # modulus
+   -1,     # negation (unary)
+   !4      # faculty (unary)
+</code></pre></div>
+<p>As you can see, the result of most of these operations between integer operands is also an integer value.
+The division operator (<code>/</code>) is an exception. It always returns a float value. The floor division operator (<code>//</code>) however returns an integer value, but it's obviously reduced to integer precision.
+An operation between integer and float operands always returns a float value. Otherwise, the return type is usually the type of the first operand.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A full list of operators is available in <a href="../../syntax_and_semantics/operators.html#arithmetic-operators">the Operator reference</a>.</p>
 </div>
-<h2 id="reassigning-a-value">Reassigning a Value<a class="headerlink" href="#reassigning-a-value" title="Permanent link">&para;</a></h2>
-<p>A local variable can be reassigned with a different value:</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-
-<span class="bp">p!</span> <span class="n">message</span>
-
-<span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Sheldon!&quot;</span>
-
-<span class="bp">p!</span> <span class="n">message</span>
+<h4 id="precedence">Precedence<a class="headerlink" href="#precedence" title="Permanent link">&para;</a></h4>
+<div class="admonition todo">
+<p class="admonition-title">precedence</p>
+</div>
+<h3 id="number-methods">Number Methods<a class="headerlink" href="#number-methods" title="Permanent link">&para;</a></h3>
+<p>Some less common math operations are not operators, but named methods.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! -5.abs,    # absolute value
+   4.3.round, # round to nearest integer
+   5.even?,   # odd/even check
+   10.gcd    # greatest common divisor
 </code></pre></div>
-<p>This also works with values of a different type. The type of the variable changes when a value of a different type is assigned. The compiler is smart enough to know which type it has at which point in the program.</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-
-<span class="bp">p!</span> <span class="n">message</span><span class="p">,</span> <span class="kp">typeof</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-
-<span class="n">message</span> <span class="o">=</span> <span class="mi">73</span>
-
-<span class="bp">p!</span> <span class="n">message</span><span class="p">,</span> <span class="kp">typeof</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A full list of number methods is available in <a href="https://crystal-lang.org/api/latest/Number.html">the Number API docs</a> (also check subtypes).</p>
+</div>
+<h3 id="math-methods">Math Methods<a class="headerlink" href="#math-methods" title="Permanent link">&para;</a></h3>
+<p>Some arithmetic methods are not defined on the number types directly, but in the <code>Math</code> namespace.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! Math.cos(1),      # cosine
+   Math.sin(1),      # sine
+   Math.tan(1),      # tangens
+   Math.log(42),     # natural logarithm
+   Math.log10(312),  # logarithm to base 10
+   Math.log(312, 5), # logarithm to base 5
+   Math.sqrt(9)      # square root
 </code></pre></div>
-<h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
-<!-- TODO: skip this section b/c practical irrelenvance? -->
-
-<p>The type can also be declared explicitly. In this case, it's impossible to reassign a value of a different type. Adding <code>message = 73</code> to the following program would be a compiler error:</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="p">:</span> <span class="n">String</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-
-<span class="bp">p!</span> <span class="kp">typeof</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A full list of math methods is available in <a href="https://crystal-lang.org/api/latest/Math.html">the Math API docs</a>.</p>
+</div>
+<h2 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">&para;</a></h2>
+<p>Some mathematical constants are available as constants of the <code>Math</code> module.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! Math::E,   # Euler&#39;s number
+   Math::TAU, # Full circle constant (2 * PI)
+   Math::PI   # Archimedes&#39; constant (TAU / 2)
 </code></pre></div>
-<p>Type declaration and value assignment can also be separated. But it's impossible to read from the variable before a value is assigned (this would result in a compiler error).</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="p">:</span> <span class="n">String</span>
-
-<span class="c1"># Can&#39;t do `p! message` here before the assignment</span>
-
-<span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-
-<span class="bp">p!</span> <span class="kp">typeof</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-</code></pre></div>
-<p>In practice it is rarely necessary or useful to declare the type of local variables.</p>
                 
               
               
@@ -2879,7 +3035,7 @@ Instead, you can assign it to a local variable and re-use it:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="01_hello_world.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="02_variables.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2888,19 +3044,19 @@ Instead, you can assign it to a local variable and re-use it:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Hello World
+                Variables
               </div>
             </div>
           </a>
         
         
-          <a href="03_methods.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="04_strings.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Methods
+                Strings
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

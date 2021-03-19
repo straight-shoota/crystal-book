@@ -9,7 +9,7 @@
       
       
       
-        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/guides/performance.html">
+        <link rel="canonical" href="https://crystal-lang.org/reference/guides/performance.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../assets/crystal-circ.svg" alt="logo">
 
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../assets/crystal-circ.svg" alt="logo">
 
@@ -2680,20 +2680,20 @@
     <label class="md-nav__link" for="nav-11-1">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../tutorials/01_introduction/index.html" class="md-nav__link"
+        <a href="../tutorials/01_basics/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Introduction
+        Basics
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Introduction" data-md-level="2">
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
       <label class="md-nav__title" for="nav-11-1">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../tutorials/01_introduction/index.html" class="md-nav__link"
+          <a href="../tutorials/01_basics/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Introduction
+          Basics
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2706,7 +2706,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_introduction/01_hello_world.html" class="md-nav__link">
+    <a href="../tutorials/01_basics/01_hello_world.html" class="md-nav__link">
       Hello World
     </a>
   </li>
@@ -2719,7 +2719,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_introduction/02_variables.html" class="md-nav__link">
+    <a href="../tutorials/01_basics/02_variables.html" class="md-nav__link">
       Variables
     </a>
   </li>
@@ -2732,8 +2732,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_introduction/03_methods.html" class="md-nav__link">
-      Methods
+    <a href="../tutorials/01_basics/03_math.html" class="md-nav__link">
+      Math
     </a>
   </li>
 
@@ -2745,8 +2745,34 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_introduction/04_strings.html" class="md-nav__link">
-      String Operations
+    <a href="../tutorials/01_basics/04_strings.html" class="md-nav__link">
+      Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/01_basics/05_control_flow.html" class="md-nav__link">
+      Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/01_basics/06_methods.html" class="md-nav__link">
+      Methods
     </a>
   </li>
 
@@ -2923,8 +2949,9 @@
 </code></pre></div>
 <p>This philosophy of appending to an IO instead of returning an intermediate string results in better performance than handling intermediate strings. You should use this strategy in your API definitions too.</p>
 <p>Let's compare the times:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># io_benchmark.cr</span>
-<span class="k">require</span> <span class="s2">&quot;benchmark&quot;</span>
+<div class="admonition example">
+<p class="admonition-title">io_benchmark.cr</p>
+<div class="highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;benchmark&quot;</span>
 
 <span class="n">io</span> <span class="o">=</span> <span class="n">IO</span><span class="o">::</span><span class="n">Memory</span><span class="o">.</span><span class="n">new</span>
 
@@ -2940,6 +2967,7 @@
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div>
+</div>
 <p>Output:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>crystal run --release io_benchmark.cr
 <span class="go">without to_s  77.11M ( 12.97ns) (± 1.05%)       fastest</span>
@@ -3024,8 +3052,8 @@
 <p>If you declare your type as a <strong>struct</strong> instead of a <strong>class</strong>, creating an instance of it will use stack memory, which is much cheaper than heap memory and doesn't put pressure on the GC.</p>
 <p>You shouldn't always use a struct, though. Structs are passed by value, so if you pass one to a method and the method makes changes to it, the caller won't see those changes, so they can be bug-prone. The best thing to do is to only use structs with immutable objects, especially if they are small.</p>
 <p>For example:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># class_vs_struct.cr</span>
-<span class="k">require</span> <span class="s2">&quot;benchmark&quot;</span>
+<p>!!! example "class_vs_struct.cr'
+    <div class="highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;benchmark&quot;</span>
 
 <span class="k">class</span> <span class="nc">PointClass</span>
   <span class="bp">getter</span> <span class="n">x</span>
@@ -3047,7 +3075,7 @@
   <span class="n">x</span><span class="o">.</span><span class="n">report</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">)</span> <span class="p">{</span> <span class="n">PointClass</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">}</span>
   <span class="n">x</span><span class="o">.</span><span class="n">report</span><span class="p">(</span><span class="s2">&quot;struct&quot;</span><span class="p">)</span> <span class="p">{</span> <span class="n">PointStruct</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="p">}</span>
 <span class="k">end</span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Output:</p>
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>crystal run --release class_vs_struct.cr
 <span class="go"> class  28.17M (± 2.86%) 15.29× slower</span>

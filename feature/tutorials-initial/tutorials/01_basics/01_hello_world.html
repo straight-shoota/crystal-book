@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/tutorials/01_introduction/index.html">
+        <link rel="canonical" href="https://crystal-lang.org/reference/tutorials/01_basics/01_hello_world.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
-        <title>Language Introduction - Crystal</title>
+        <title>Hello World - Crystal</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#language-introduction" class="md-skip">
+        <a href="#hello-world" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -107,7 +107,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Language Introduction
+              Hello World
             
           </span>
         </div>
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -2584,20 +2584,20 @@
     <label class="md-nav__link" for="nav-11-1">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="index.html" class="md-nav__link md-nav__link--active"
+        <a href="index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Introduction
+        Basics
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Introduction" data-md-level="2">
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
       <label class="md-nav__title" for="nav-11-1">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="index.html" class="md-nav__link md-nav__link--active"
+          <a href="index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Introduction
+          Basics
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2608,11 +2608,20 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="01_hello_world.html" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="01_hello_world.html" class="md-nav__link md-nav__link--active">
       Hello World
     </a>
+    
   </li>
 
         
@@ -2636,8 +2645,8 @@
 
 
   <li class="md-nav__item">
-    <a href="03_methods.html" class="md-nav__link">
-      Methods
+    <a href="03_math.html" class="md-nav__link">
+      Math
     </a>
   </li>
 
@@ -2650,7 +2659,33 @@
 
   <li class="md-nav__item">
     <a href="04_strings.html" class="md-nav__link">
-      String Operations
+      Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="05_control_flow.html" class="md-nav__link">
+      Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="06_methods.html" class="md-nav__link">
+      Methods
     </a>
   </li>
 
@@ -2706,23 +2741,29 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_introduction/README.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_basics/01_hello_world.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="language-introduction">Language Introduction<a class="headerlink" href="#language-introduction" title="Permanent link">&para;</a></h1>
-<p>This course is targeted at novice Crystal programmers and conveys a basic understanding
-of the language's core concepts.
-Prior programming experience is recommended, but not required. This course can help you learn
-your first programming language.</p>
-<p>Contents:</p>
-<ul>
-<li><a href="01_hello_world.html">Hello World</a> – A simple program that prints a famous first message</li>
-<li><a href="02_variables.html">Variables</a> – Introduction to variables and assignments</li>
-<li><a href="03_methods.html">Methods</a> – Introduction to methods, arguments and type restrictions</li>
-<li><a href="04_strings.html">String Operations</a> – Examples on how to modify strings</li>
-</ul>
+                <h1 id="hello-world">Hello World<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h1>
+<p>The first thing you need to learn in any programming language is the famous <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program"><code>Hello World!</code> program</a>.</p>
+<p>In Crystal this is pretty simple, maybe a little bit boring:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="nb">puts</span> <span class="s2">&quot;Hello World!&quot;</span>
+</code></pre></div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can build and run code examples interactively on this website (thanks to <a href="https://carc.in">carc.in</a>).
+The output is shown directly inline.</p>
+<p>If you want to follow along locally, follow the <a href="https://crystal-lang.org/install/">installation</a> and <a href="../../getting_started/index.html">getting started</a> instructions.</p>
+</div>
+<div class="admonition info inline end">
+<p class="admonition-title">Info</p>
+<p>The name <code>puts</code> is short for “put string”.</p>
+</div>
+<p>The entire program consists of a call to the method <a href="https://crystal-lang.org/api/latest/toplevel.html#puts%28%2Aobjects%29%3ANil-class-method"><code>puts</code></a> with the string <code>Hello World!</code> as argument.</p>
+<p>This method prints the string (plus a trailing new line character) to the <a href="https://en.wikipedia.org/wiki/Standard_output">standard output</a>.</p>
+<p>All code in the top-level scope is part of the main program. There is no explicit <code>main</code> function as <a href="https://en.wikipedia.org/wiki/Entry_point">entry point</a> to the program.</p>
                 
               
               
@@ -2741,7 +2782,7 @@ your first programming language.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../index.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="index.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2750,19 +2791,19 @@ your first programming language.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Tutorials
+                Basics
               </div>
             </div>
           </a>
         
         
-          <a href="01_hello_world.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="02_variables.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Hello World
+                Variables
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

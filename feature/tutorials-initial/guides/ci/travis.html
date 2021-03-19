@@ -9,7 +9,7 @@
       
       
       
-        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/guides/ci/travis.html">
+        <link rel="canonical" href="https://crystal-lang.org/reference/guides/ci/travis.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -2708,20 +2708,20 @@
     <label class="md-nav__link" for="nav-11-1">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../../tutorials/01_introduction/index.html" class="md-nav__link"
+        <a href="../../tutorials/01_basics/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Introduction
+        Basics
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Introduction" data-md-level="2">
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
       <label class="md-nav__title" for="nav-11-1">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../../tutorials/01_introduction/index.html" class="md-nav__link"
+          <a href="../../tutorials/01_basics/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Introduction
+          Basics
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2734,7 +2734,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/01_introduction/01_hello_world.html" class="md-nav__link">
+    <a href="../../tutorials/01_basics/01_hello_world.html" class="md-nav__link">
       Hello World
     </a>
   </li>
@@ -2747,7 +2747,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/01_introduction/02_variables.html" class="md-nav__link">
+    <a href="../../tutorials/01_basics/02_variables.html" class="md-nav__link">
       Variables
     </a>
   </li>
@@ -2760,8 +2760,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/01_introduction/03_methods.html" class="md-nav__link">
-      Methods
+    <a href="../../tutorials/01_basics/03_math.html" class="md-nav__link">
+      Math
     </a>
   </li>
 
@@ -2773,8 +2773,34 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/01_introduction/04_strings.html" class="md-nav__link">
-      String Operations
+    <a href="../../tutorials/01_basics/04_strings.html" class="md-nav__link">
+      Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/01_basics/05_control_flow.html" class="md-nav__link">
+      Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/01_basics/06_methods.html" class="md-nav__link">
+      Methods
     </a>
   </li>
 
@@ -2941,14 +2967,17 @@
 <h2 id="build-and-run-specs">Build and run specs<a class="headerlink" href="#build-and-run-specs" title="Permanent link">&para;</a></h2>
 <h3 id="using-latest-and-nightly">Using <code>latest</code> and <code>nightly</code><a class="headerlink" href="#using-latest-and-nightly" title="Permanent link">&para;</a></h3>
 <p>A first (and very basic) Travis CI config file could be:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># .travis.yml</span>
-<span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
 </code></pre></div>
+</div>
 <p>That's it! With this config file, Travis CI by default will run <code>crystal spec</code>.
 Now, we just need to go to Travis CI dashboard to <a href="https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci">add the GitHub repository</a>.</p>
 <p>Let's see another example:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># .travis.yml</span>
-<span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
 
 <span class="nt">crystal</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">latest</span>
@@ -2958,6 +2987,7 @@ Now, we just need to go to Travis CI dashboard to <a href="https://docs.travis-c
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal tool format --check</span>
 </code></pre></div>
+</div>
 <p>With this configuration, Travis CI will run the tests using both Crystal <code>latest</code> and <code>nightly</code> releases on every push to a branch on your Github repository.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2967,15 +2997,17 @@ Now, we just need to go to Travis CI dashboard to <a href="https://docs.travis-c
 <p>Let's suppose we want to pin a specific Crystal release (maybe we want to make sure the shard compiles and works with that version) for example <a href="https://github.com/crystal-lang/crystal/releases/tag/0.31.1">Crystal 0.31.1</a>.</p>
 <p>Travis CI only provides <em>runners</em> to <code>latest</code> and <code>nightly</code> releases directly and so, we need to install the requested Crystal release manually. For this we are going to use <a href="https://www.docker.com/">Docker</a>.</p>
 <p>First we need to add Docker as a service in <code>.travis.yml</code>, and then we can use <code>docker</code> commands in our build steps, like this:</p>
-<div class="highlight"><pre><span></span><code># .travis.yml
-language: minimal
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">minimal</span>
 
-services:
-  - docker
+<span class="nt">services</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
 
-script:
-  - docker run -v $PWD:/src -w /src crystallang/crystal:0.31.1 crystal spec
+<span class="nt">script</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker run -v $PWD:/src -w /src crystallang/crystal:0.31.1 crystal spec</span>
 </code></pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We may read about different (languages)[<a href="https://docs.travis-ci.com/user/languages/">https://docs.travis-ci.com/user/languages/</a>] supported by Travis CI, included <a href="https://docs.travis-ci.com/user/languages/minimal-and-generic/">minimal</a>.</p>
@@ -2987,41 +3019,45 @@ script:
 <h3 id="using-latest-nightly-and-a-specific-crystal-release-all-together">Using <code>latest</code>, <code>nightly</code> and a specific Crystal release all together!<a class="headerlink" href="#using-latest-nightly-and-a-specific-crystal-release-all-together" title="Permanent link">&para;</a></h3>
 <p>Supported <em>runners</em> can be combined with Docker-based <em>runners</em> using a <a href="https://docs.travis-ci.com/user/customizing-the-build#build-matrix">Build Matrix</a>. This will allow us to run tests against <code>latest</code> and <code>nightly</code> and pinned releases.</p>
 <p>Here is the example:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># .travis.yml</span>
-<span class="nt">matrix</span><span class="p">:</span>
- <span class="nt">include</span><span class="p">:</span>
-   <span class="p p-Indicator">-</span> <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
-     <span class="nt">crystal</span><span class="p">:</span>
-       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">latest</span>
-     <span class="nt">script</span><span class="p">:</span>
-       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">matrix</span><span class="p">:</span>
+<span class="nt">include</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
+    <span class="nt">crystal</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">latest</span>
+    <span class="nt">script</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
 
-   <span class="p p-Indicator">-</span> <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
-     <span class="nt">crystal</span><span class="p">:</span>
-       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">nightly</span>
-     <span class="nt">script</span><span class="p">:</span>
-       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
+  <span class="p p-Indicator">-</span> <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
+    <span class="nt">crystal</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">nightly</span>
+    <span class="nt">script</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
 
-   <span class="p p-Indicator">-</span> <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bash</span>
-     <span class="nt">services</span><span class="p">:</span>
-       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
-     <span class="nt">script</span><span class="p">:</span>
-       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker run -v $PWD:/src -w /src crystallang/crystal:0.31.1 crystal spec</span>
+  <span class="p p-Indicator">-</span> <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bash</span>
+    <span class="nt">services</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
+    <span class="nt">script</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker run -v $PWD:/src -w /src crystallang/crystal:0.31.1 crystal spec</span>
 </code></pre></div>
+</div>
 <h2 id="installing-shards-packages">Installing shards packages<a class="headerlink" href="#installing-shards-packages" title="Permanent link">&para;</a></h2>
 <p>In native <em>runners</em> (<code>language: crystal</code>), Travis CI already automatically installs shards dependencies using <code>shards install</code>. To improve build performance we may add <a href="#caching">caching</a> on top of that.</p>
 <h3 id="using-docker">Using Docker<a class="headerlink" href="#using-docker" title="Permanent link">&para;</a></h3>
 <p>In a Docker-based <em>runner</em> we need to run <code>shards install</code> explicitly, like this:</p>
-<div class="highlight"><pre><span></span><code># .travis.yml
-language: bash
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bash</span>
 
-services:
-  - docker
+<span class="nt">services</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
 
-script:
-  - docker run -v $PWD:/src -w /src crystallang/crystal:0.31.1 shards install
-  - docker run -v $PWD:/src -w /src crystallang/crystal:0.31.1 crystal spec
+<span class="nt">script</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker run -v $PWD:/src -w /src crystallang/crystal:0.31.1 shards install</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker run -v $PWD:/src -w /src crystallang/crystal:0.31.1 crystal spec</span>
 </code></pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Since the shards will be installed in <code>./lib/</code> folder, it will be preserved for the second docker run command.</p>
@@ -3029,8 +3065,9 @@ script:
 <h2 id="installing-binary-dependencies">Installing binary dependencies<a class="headerlink" href="#installing-binary-dependencies" title="Permanent link">&para;</a></h2>
 <p>Our application or maybe some shards may required libraries and packages. This binary dependencies may be installed using different methods. Here we are going to show an example using the <a href="https://help.ubuntu.com/lts/serverguide/apt.html">Apt</a> command (since the Docker image we are using is based on Ubuntu)</p>
 <p>Here is a first example installing the <code>libsqlite3</code> development package using the <a href="https://docs.travis-ci.com/user/installing-dependencies/#installing-packages-with-the-apt-addon">APT addon</a>:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># .travis.yml</span>
-<span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
 <span class="nt">crystal</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">latest</span>
 
@@ -3044,30 +3081,35 @@ script:
 <span class="nt">script</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
 </code></pre></div>
+</div>
 <h3 id="using-docker_1">Using Docker<a class="headerlink" href="#using-docker_1" title="Permanent link">&para;</a></h3>
 <p>We are going to build a new docker image based on <a href="https://hub.docker.com/r/crystallang/crystal/">crystallang/crystal</a>, and in this new image we will be installing the binary dependencies.</p>
 <p>To accomplish this we are going to use a <a href="https://docs.docker.com/engine/reference/builder/">Dockerfile</a>:</p>
-<div class="highlight"><pre><span></span><code><span class="c"># Dockerfile</span>
-<span class="k">FROM</span> <span class="s">crystallang/crystal:latest</span>
+<div class="admonition example">
+<p class="admonition-title">Dockerfile</p>
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">crystallang/crystal:latest</span>
 
 <span class="c"># install binary dependencies:</span>
 <span class="k">RUN</span> apt-get update <span class="o">&amp;&amp;</span> apt-get install -y libsqlite3-dev
 </code></pre></div>
+</div>
 <p>And here is the Travis CI configuration file:</p>
-<div class="highlight"><pre><span></span><code># .travis.yml
-language: bash
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bash</span>
 
-services:
-  - docker
+<span class="nt">services</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
 
-before_install:
-  # build image using Dockerfile:
-  - docker build -t testing .
+<span class="nt">before_install</span><span class="p">:</span>
+  <span class="c1"># build image using Dockerfile:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker build -t testing .</span>
 
-script:
-  # run specs in the container
-  - docker run -v $PWD:/src -w /src testing crystal spec
+<span class="nt">script</span><span class="p">:</span>
+  <span class="c1"># run specs in the container</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">docker run -v $PWD:/src -w /src testing crystal spec</span>
 </code></pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Dockerfile arguments can be used to use the same Dockerfile for latest, nightly or a specific version.</p>
@@ -3075,8 +3117,9 @@ script:
 <h2 id="using-services">Using services<a class="headerlink" href="#using-services" title="Permanent link">&para;</a></h2>
 <p>Travis CI may start <a href="https://docs.travis-ci.com/user/database-setup/">services</a> as requested.</p>
 <p>For example, we can start a <a href="https://docs.travis-ci.com/user/database-setup/#mysql">MySQL</a> database service by adding a <code>services:</code> section to our <code>.travis.yml</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># .travis.yml</span>
-<span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
 <span class="nt">crystal</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">latest</span>
 
@@ -3086,9 +3129,11 @@ script:
 <span class="nt">script</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
 </code></pre></div>
+</div>
 <p>Here is the new test file for testing against the database:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># spec/simple_db_spec.cr</span>
-<span class="k">require</span> <span class="s2">&quot;./spec_helper&quot;</span>
+<div class="admonition example">
+<p class="admonition-title">spec/simple_db_spec.cr</p>
+<div class="highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;./spec_helper&quot;</span>
 <span class="k">require</span> <span class="s2">&quot;mysql&quot;</span>
 
 <span class="n">it</span> <span class="s2">&quot;connects to the database&quot;</span> <span class="k">do</span>
@@ -3097,9 +3142,11 @@ script:
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div>
+</div>
 <p>When pushing this changes Travis CI will report the following error: <code>Unknown database 'test' (Exception)</code>, showing that we need to configure the MySQL service <strong>and also setup the database</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># .travis.yml</span>
-<span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
 <span class="nt">crystal</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">latest</span>
 
@@ -3118,10 +3165,13 @@ script:
 <span class="nt">script</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
 </code></pre></div>
+</div>
 <p>We are <a href="https://andidittrich.de/2017/06/travisci-setup-mysql-tablesdata-before-running-tests.html">using a <code>schema.sql</code> script</a> to create a more readable <code>.travis.yml</code>. The file <code>./db/schema.sql</code> looks like this:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">-- schema.sql</span>
-<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="p">...</span> <span class="n">etc</span> <span class="p">...</span>
+<div class="admonition example">
+<p class="admonition-title">schema.sql</p>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="p">...</span> <span class="n">etc</span> <span class="p">...</span>
 </code></pre></div>
+</div>
 <p>Pushing these changes will trigger Travis CI and the build should be successful!</p>
 <h2 id="caching">Caching<a class="headerlink" href="#caching" title="Permanent link">&para;</a></h2>
 <p>If we read Travis CI job log, we will find that every time the job runs, Travis CI needs to fetch the libraries needed to run the application:</p>
@@ -3130,16 +3180,18 @@ Fetching https://github.com/crystal-lang/crystal-db.git
 </code></pre></div>
 <p>This takes time and, on the other hand, these libraries might not change as often as our application, so it looks like we may cache them and save time.</p>
 <p>Travis CI <a href="https://docs.travis-ci.com/user/caching/">uses caching</a> to improve some parts of the building path. Here is the new configuration file <strong>with cache enabled</strong>:</p>
-<div class="highlight"><pre><span></span><code># .travis.yml
-language: crystal
-crystal:
-  - latest
+<div class="admonition example">
+<p class="admonition-title">.travis.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal</span>
+<span class="nt">crystal</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">latest</span>
 
-cache: shards
+<span class="nt">cache</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">shards</span>
 
-script:
-  - crystal spec
+<span class="nt">script</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal spec</span>
 </code></pre></div>
+</div>
 <p>Let's push these changes. Travis CI will run, and it will install dependencies, but then it will cache the shards cache folder which, usually, is <code>~/.cache/shards</code>. The following runs will use the cached dependencies.</p>
                 
               

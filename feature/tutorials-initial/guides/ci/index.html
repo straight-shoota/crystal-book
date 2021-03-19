@@ -9,7 +9,7 @@
       
       
       
-        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/guides/ci/index.html">
+        <link rel="canonical" href="https://crystal-lang.org/reference/guides/ci/index.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/tutorials-initial/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -2584,20 +2584,20 @@
     <label class="md-nav__link" for="nav-11-1">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../../tutorials/01_introduction/index.html" class="md-nav__link"
+        <a href="../../tutorials/01_basics/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Introduction
+        Basics
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Introduction" data-md-level="2">
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
       <label class="md-nav__title" for="nav-11-1">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../../tutorials/01_introduction/index.html" class="md-nav__link"
+          <a href="../../tutorials/01_basics/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Introduction
+          Basics
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2610,7 +2610,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/01_introduction/01_hello_world.html" class="md-nav__link">
+    <a href="../../tutorials/01_basics/01_hello_world.html" class="md-nav__link">
       Hello World
     </a>
   </li>
@@ -2623,7 +2623,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/01_introduction/02_variables.html" class="md-nav__link">
+    <a href="../../tutorials/01_basics/02_variables.html" class="md-nav__link">
       Variables
     </a>
   </li>
@@ -2636,8 +2636,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/01_introduction/03_methods.html" class="md-nav__link">
-      Methods
+    <a href="../../tutorials/01_basics/03_math.html" class="md-nav__link">
+      Math
     </a>
   </li>
 
@@ -2649,8 +2649,34 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/01_introduction/04_strings.html" class="md-nav__link">
-      String Operations
+    <a href="../../tutorials/01_basics/04_strings.html" class="md-nav__link">
+      Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/01_basics/05_control_flow.html" class="md-nav__link">
+      Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/01_basics/06_methods.html" class="md-nav__link">
+      Methods
     </a>
   </li>
 
@@ -2744,8 +2770,9 @@
 <p>Note that we won't be using TDD in the example itself, but we will mimic as if the example code is the result of the first iterations.</p>
 <p>Another important thing to mention is that we are using <code>crystal init</code> to <a href="../using_the_compiler/#creating-a-crystal-project">create the application</a>.</p>
 <p>And here's the implementation:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># src/game_of_life.cr</span>
-<span class="k">class</span> <span class="nc">Location</span>
+<div class="admonition example">
+<p class="admonition-title">src/game_of_life.cr</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Location</span>
   <span class="bp">getter</span> <span class="n">x</span> <span class="p">:</span> <span class="n">Int32</span>
   <span class="bp">getter</span> <span class="n">y</span> <span class="p">:</span> <span class="n">Int32</span>
 
@@ -2777,9 +2804,11 @@
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div>
+</div>
 <p>And the specs:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># spec/game_of_life_spec.cr</span>
-<span class="k">require</span> <span class="s2">&quot;./spec_helper&quot;</span>
+<div class="admonition example">
+<p class="admonition-title">spec/game_of_life_spec.cr</p>
+<div class="highlight"><pre><span></span><code><span class="k">require</span> <span class="s2">&quot;./spec_helper&quot;</span>
 
 <span class="n">describe</span> <span class="s2">&quot;a new world&quot;</span> <span class="k">do</span>
   <span class="n">it</span> <span class="s2">&quot;should be empty&quot;</span> <span class="k">do</span>
@@ -2796,6 +2825,7 @@
   <span class="k">end</span>
 <span class="k">end</span>
 </code></pre></div>
+</div>
 <p>And this is all we need for our continuous integration examples! Let's start!</p>
 <h2 id="continuous-integration-step-by-step">Continuous Integration step by step<a class="headerlink" href="#continuous-integration-step-by-step" title="Permanent link">&para;</a></h2>
 <p>Here's the list of items we want to achieve:</p>

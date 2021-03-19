@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="https://crystal-lang.org/reference/syntax_and_semantics/structs.html">
+        <link rel="canonical" href="https://crystal-lang.org/reference/tutorials/01_basics/06_methods.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
-        <title>Structs - Crystal</title>
+        <title>Methods - Crystal</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.15aa0b43.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.15aa0b43.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.75751829.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.75751829.min.css">
         
           
           
@@ -42,13 +42,13 @@
     
     
     
-      <link rel="stylesheet" href="../assets/vendor/codemirror/codemirror.min.css">
+      <link rel="stylesheet" href="../../assets/vendor/codemirror/codemirror.min.css">
     
-      <link rel="stylesheet" href="../assets/style.css">
+      <link rel="stylesheet" href="../../assets/style.css">
     
-      <link rel="stylesheet" href="../assets/vendor/carcin-play/carcin-play.css">
+      <link rel="stylesheet" href="../../assets/vendor/carcin-play/carcin-play.css">
     
-      <link rel="stylesheet" href="../assets/vendor/carcin-play/codemirror-theme.css">
+      <link rel="stylesheet" href="../../assets/vendor/carcin-play/codemirror-theme.css">
     
     
       
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#structs" class="md-skip">
+        <a href="#methods" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
-  <img src="../assets/crystal-circ.svg" alt="logo">
+  <img src="../../assets/crystal-circ.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -107,7 +107,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Structs
+              Methods
             
           </span>
         </div>
@@ -183,7 +183,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
-  <img src="../assets/crystal-circ.svg" alt="logo">
+  <img src="../../assets/crystal-circ.svg" alt="logo">
 
     </a>
     Crystal
@@ -211,7 +211,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../index.html" class="md-nav__link">
+    <a href="../../index.html" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -232,7 +232,7 @@
     <label class="md-nav__link" for="nav-2">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../getting_started/index.html" class="md-nav__link"
+        <a href="../../getting_started/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Getting started
@@ -242,7 +242,7 @@
       <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../getting_started/index.html" class="md-nav__link"
+          <a href="../../getting_started/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Getting started
@@ -258,7 +258,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getting_started/http_server.html" class="md-nav__link">
+    <a href="../../getting_started/http_server.html" class="md-nav__link">
       An HTTP Server
     </a>
   </li>
@@ -271,7 +271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getting_started/cli.html" class="md-nav__link">
+    <a href="../../getting_started/cli.html" class="md-nav__link">
       A Command Line Application
     </a>
   </li>
@@ -289,7 +289,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../using_the_compiler/index.html" class="md-nav__link">
+    <a href="../../using_the_compiler/index.html" class="md-nav__link">
       Using the compiler
     </a>
   </li>
@@ -302,7 +302,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../the_shards_command/index.html" class="md-nav__link">
+    <a href="../../the_shards_command/index.html" class="md-nav__link">
       The shards command
     </a>
   </li>
@@ -315,7 +315,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../overview/index.html" class="md-nav__link">
+    <a href="../../overview/index.html" class="md-nav__link">
       About this guide
     </a>
   </li>
@@ -326,19 +326,17 @@
       
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
     
     <label class="md-nav__link" for="nav-6">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="index.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Syntax and semantics
@@ -348,7 +346,7 @@
       <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="index.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Syntax and semantics
@@ -364,7 +362,7 @@
 
 
   <li class="md-nav__item">
-    <a href="comments.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/comments.html" class="md-nav__link">
       Comments
     </a>
   </li>
@@ -385,7 +383,7 @@
     <label class="md-nav__link" for="nav-6-2">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="literals/index.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/literals/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Literals
@@ -395,7 +393,7 @@
       <label class="md-nav__title" for="nav-6-2">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="literals/index.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/literals/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Literals
@@ -411,7 +409,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/nil.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/nil.html" class="md-nav__link">
       Nil
     </a>
   </li>
@@ -424,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/bool.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/bool.html" class="md-nav__link">
       Bool
     </a>
   </li>
@@ -437,7 +435,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/integers.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/integers.html" class="md-nav__link">
       Integers
     </a>
   </li>
@@ -450,7 +448,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/floats.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/floats.html" class="md-nav__link">
       Floats
     </a>
   </li>
@@ -463,7 +461,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/char.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/char.html" class="md-nav__link">
       Char
     </a>
   </li>
@@ -476,7 +474,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/string.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/string.html" class="md-nav__link">
       String
     </a>
   </li>
@@ -489,7 +487,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/symbol.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/symbol.html" class="md-nav__link">
       Symbol
     </a>
   </li>
@@ -502,7 +500,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/array.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/array.html" class="md-nav__link">
       Array
     </a>
   </li>
@@ -515,7 +513,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/hash.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/hash.html" class="md-nav__link">
       Hash
     </a>
   </li>
@@ -528,7 +526,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/range.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/range.html" class="md-nav__link">
       Range
     </a>
   </li>
@@ -541,7 +539,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/regex.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/regex.html" class="md-nav__link">
       Regex
     </a>
   </li>
@@ -554,7 +552,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/tuple.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/tuple.html" class="md-nav__link">
       Tuple
     </a>
   </li>
@@ -567,7 +565,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/named_tuple.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/named_tuple.html" class="md-nav__link">
       NamedTuple
     </a>
   </li>
@@ -580,7 +578,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/proc.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/proc.html" class="md-nav__link">
       Proc
     </a>
   </li>
@@ -593,7 +591,7 @@
 
 
   <li class="md-nav__item">
-    <a href="literals/command.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/literals/command.html" class="md-nav__link">
       Command
     </a>
   </li>
@@ -611,7 +609,7 @@
 
 
   <li class="md-nav__item">
-    <a href="assignment.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/assignment.html" class="md-nav__link">
       Assignment
     </a>
   </li>
@@ -624,7 +622,7 @@
 
 
   <li class="md-nav__item">
-    <a href="local_variables.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/local_variables.html" class="md-nav__link">
       Local variables
     </a>
   </li>
@@ -645,7 +643,7 @@
     <label class="md-nav__link" for="nav-6-5">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="control_expressions.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/control_expressions.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Control expressions
@@ -655,7 +653,7 @@
       <label class="md-nav__title" for="nav-6-5">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="control_expressions.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/control_expressions.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Control expressions
@@ -671,7 +669,7 @@
 
 
   <li class="md-nav__item">
-    <a href="truthy_and_falsey_values.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/truthy_and_falsey_values.html" class="md-nav__link">
       Truthy and falsey values
     </a>
   </li>
@@ -692,7 +690,7 @@
     <label class="md-nav__link" for="nav-6-5-2">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="if.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/if.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         if
@@ -702,7 +700,7 @@
       <label class="md-nav__title" for="nav-6-5-2">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="if.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/if.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           if
@@ -718,7 +716,7 @@
 
 
   <li class="md-nav__item">
-    <a href="as_a_suffix.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/as_a_suffix.html" class="md-nav__link">
       As a suffix
     </a>
   </li>
@@ -731,7 +729,7 @@
 
 
   <li class="md-nav__item">
-    <a href="as_an_expression.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/as_an_expression.html" class="md-nav__link">
       As an expression
     </a>
   </li>
@@ -744,7 +742,7 @@
 
 
   <li class="md-nav__item">
-    <a href="ternary_if.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/ternary_if.html" class="md-nav__link">
       Ternary if
     </a>
   </li>
@@ -757,7 +755,7 @@
 
 
   <li class="md-nav__item">
-    <a href="if_var.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/if_var.html" class="md-nav__link">
       if var
     </a>
   </li>
@@ -770,7 +768,7 @@
 
 
   <li class="md-nav__item">
-    <a href="if_varis_a.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/if_varis_a.html" class="md-nav__link">
       if var.is_a?(...)
     </a>
   </li>
@@ -783,7 +781,7 @@
 
 
   <li class="md-nav__item">
-    <a href="if_varresponds_to.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/if_varresponds_to.html" class="md-nav__link">
       if var.responds_to?(...)
     </a>
   </li>
@@ -796,7 +794,7 @@
 
 
   <li class="md-nav__item">
-    <a href="if_var_nil.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/if_var_nil.html" class="md-nav__link">
       if var.nil?
     </a>
   </li>
@@ -809,7 +807,7 @@
 
 
   <li class="md-nav__item">
-    <a href="not.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/not.html" class="md-nav__link">
       if !
     </a>
   </li>
@@ -827,7 +825,7 @@
 
 
   <li class="md-nav__item">
-    <a href="unless.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/unless.html" class="md-nav__link">
       unless
     </a>
   </li>
@@ -840,7 +838,7 @@
 
 
   <li class="md-nav__item">
-    <a href="case.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/case.html" class="md-nav__link">
       case
     </a>
   </li>
@@ -861,7 +859,7 @@
     <label class="md-nav__link" for="nav-6-5-5">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="while.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/while.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         while
@@ -871,7 +869,7 @@
       <label class="md-nav__title" for="nav-6-5-5">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="while.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/while.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           while
@@ -887,7 +885,7 @@
 
 
   <li class="md-nav__item">
-    <a href="break.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/break.html" class="md-nav__link">
       break
     </a>
   </li>
@@ -900,7 +898,7 @@
 
 
   <li class="md-nav__item">
-    <a href="next.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/next.html" class="md-nav__link">
       next
     </a>
   </li>
@@ -918,7 +916,7 @@
 
 
   <li class="md-nav__item">
-    <a href="until.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/until.html" class="md-nav__link">
       until
     </a>
   </li>
@@ -931,7 +929,7 @@
 
 
   <li class="md-nav__item">
-    <a href="and.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/and.html" class="md-nav__link">
       &&
     </a>
   </li>
@@ -944,7 +942,7 @@
 
 
   <li class="md-nav__item">
-    <a href="or.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/or.html" class="md-nav__link">
       ||
     </a>
   </li>
@@ -962,7 +960,7 @@
 
 
   <li class="md-nav__item">
-    <a href="requiring_files.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/requiring_files.html" class="md-nav__link">
       Requiring files
     </a>
   </li>
@@ -973,19 +971,17 @@
           
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-7" type="checkbox" id="nav-6-7" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-7" type="checkbox" id="nav-6-7" >
     
     <label class="md-nav__link" for="nav-6-7">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="types_and_methods.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/types_and_methods.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Types and methods
@@ -995,7 +991,7 @@
       <label class="md-nav__title" for="nav-6-7">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="types_and_methods.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/types_and_methods.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Types and methods
@@ -1011,7 +1007,7 @@
 
 
   <li class="md-nav__item">
-    <a href="everything_is_an_object.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/everything_is_an_object.html" class="md-nav__link">
       Everything is an object
     </a>
   </li>
@@ -1024,7 +1020,7 @@
 
 
   <li class="md-nav__item">
-    <a href="the_program.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/the_program.html" class="md-nav__link">
       The Program
     </a>
   </li>
@@ -1045,7 +1041,7 @@
     <label class="md-nav__link" for="nav-6-7-3">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="classes_and_methods.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/classes_and_methods.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Classes and methods
@@ -1055,7 +1051,7 @@
       <label class="md-nav__title" for="nav-6-7-3">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="classes_and_methods.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/classes_and_methods.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Classes and methods
@@ -1071,7 +1067,7 @@
 
 
   <li class="md-nav__item">
-    <a href="new%2C_initialize_and_allocate.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/new%2C_initialize_and_allocate.html" class="md-nav__link">
       new, initialize and allocate
     </a>
   </li>
@@ -1084,7 +1080,7 @@
 
 
   <li class="md-nav__item">
-    <a href="methods_and_instance_variables.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/methods_and_instance_variables.html" class="md-nav__link">
       Methods and instance variables
     </a>
   </li>
@@ -1097,7 +1093,7 @@
 
 
   <li class="md-nav__item">
-    <a href="type_inference.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/type_inference.html" class="md-nav__link">
       Type inference
     </a>
   </li>
@@ -1110,7 +1106,7 @@
 
 
   <li class="md-nav__item">
-    <a href="union_types.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/union_types.html" class="md-nav__link">
       Union types
     </a>
   </li>
@@ -1123,7 +1119,7 @@
 
 
   <li class="md-nav__item">
-    <a href="overloading.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/overloading.html" class="md-nav__link">
       Overloading
     </a>
   </li>
@@ -1136,7 +1132,7 @@
 
 
   <li class="md-nav__item">
-    <a href="default_and_named_arguments.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/default_and_named_arguments.html" class="md-nav__link">
       Default parameter values and named arguments
     </a>
   </li>
@@ -1149,7 +1145,7 @@
 
 
   <li class="md-nav__item">
-    <a href="splats_and_tuples.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/splats_and_tuples.html" class="md-nav__link">
       Splats and tuples
     </a>
   </li>
@@ -1162,7 +1158,7 @@
 
 
   <li class="md-nav__item">
-    <a href="type_restrictions.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/type_restrictions.html" class="md-nav__link">
       Type restrictions
     </a>
   </li>
@@ -1175,7 +1171,7 @@
 
 
   <li class="md-nav__item">
-    <a href="return_types.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/return_types.html" class="md-nav__link">
       Return types
     </a>
   </li>
@@ -1188,7 +1184,7 @@
 
 
   <li class="md-nav__item">
-    <a href="default_values_named_arguments_splats_tuples_and_overloading.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/default_values_named_arguments_splats_tuples_and_overloading.html" class="md-nav__link">
       Method arguments
     </a>
   </li>
@@ -1201,7 +1197,7 @@
 
 
   <li class="md-nav__item">
-    <a href="operators.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/operators.html" class="md-nav__link">
       Operators
     </a>
   </li>
@@ -1214,7 +1210,7 @@
 
 
   <li class="md-nav__item">
-    <a href="visibility.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/visibility.html" class="md-nav__link">
       Visibility
     </a>
   </li>
@@ -1235,7 +1231,7 @@
     <label class="md-nav__link" for="nav-6-7-3-13">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="inheritance.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/inheritance.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Inheritance
@@ -1245,7 +1241,7 @@
       <label class="md-nav__title" for="nav-6-7-3-13">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="inheritance.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/inheritance.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Inheritance
@@ -1261,7 +1257,7 @@
 
 
   <li class="md-nav__item">
-    <a href="virtual_and_abstract_types.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/virtual_and_abstract_types.html" class="md-nav__link">
       Virtual and abstract types
     </a>
   </li>
@@ -1279,7 +1275,7 @@
 
 
   <li class="md-nav__item">
-    <a href="class_methods.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/class_methods.html" class="md-nav__link">
       Class methods
     </a>
   </li>
@@ -1292,7 +1288,7 @@
 
 
   <li class="md-nav__item">
-    <a href="class_variables.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/class_variables.html" class="md-nav__link">
       Class variables
     </a>
   </li>
@@ -1305,7 +1301,7 @@
 
 
   <li class="md-nav__item">
-    <a href="finalize.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/finalize.html" class="md-nav__link">
       finalize
     </a>
   </li>
@@ -1323,7 +1319,7 @@
 
 
   <li class="md-nav__item">
-    <a href="modules.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/modules.html" class="md-nav__link">
       Modules
     </a>
   </li>
@@ -1336,7 +1332,7 @@
 
 
   <li class="md-nav__item">
-    <a href="generics.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/generics.html" class="md-nav__link">
       Generics
     </a>
   </li>
@@ -1347,61 +1343,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        <span class="md-nav__icon md-icon"></span>
-        
-          <a href="structs.html" class="md-nav__link md-nav__link--active"
-            style="margin: initial; padding: initial; pointer-events: initial">
-        
-          Structs
-        </a>
-      </label>
-    
-    <a href="structs.html" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../syntax_and_semantics/structs.html" class="md-nav__link">
       Structs
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#passing-by-value" class="md-nav__link">
-    Passing by value
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1412,7 +1358,7 @@
 
 
   <li class="md-nav__item">
-    <a href="constants.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/constants.html" class="md-nav__link">
       Constants
     </a>
   </li>
@@ -1425,7 +1371,7 @@
 
 
   <li class="md-nav__item">
-    <a href="enum.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/enum.html" class="md-nav__link">
       Enums
     </a>
   </li>
@@ -1446,7 +1392,7 @@
     <label class="md-nav__link" for="nav-6-7-9">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="blocks_and_procs.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/blocks_and_procs.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Blocks and Procs
@@ -1456,7 +1402,7 @@
       <label class="md-nav__title" for="nav-6-7-9">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="blocks_and_procs.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/blocks_and_procs.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Blocks and Procs
@@ -1472,7 +1418,7 @@
 
 
   <li class="md-nav__item">
-    <a href="capturing_blocks.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/capturing_blocks.html" class="md-nav__link">
       Capturing blocks
     </a>
   </li>
@@ -1485,7 +1431,7 @@
 
 
   <li class="md-nav__item">
-    <a href="proc_literal.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/proc_literal.html" class="md-nav__link">
       Proc literal
     </a>
   </li>
@@ -1498,7 +1444,7 @@
 
 
   <li class="md-nav__item">
-    <a href="block_forwarding.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/block_forwarding.html" class="md-nav__link">
       Block forwarding
     </a>
   </li>
@@ -1511,7 +1457,7 @@
 
 
   <li class="md-nav__item">
-    <a href="closures.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/closures.html" class="md-nav__link">
       Closures
     </a>
   </li>
@@ -1529,7 +1475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="alias.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/alias.html" class="md-nav__link">
       alias
     </a>
   </li>
@@ -1547,7 +1493,7 @@
 
 
   <li class="md-nav__item">
-    <a href="exception_handling.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/exception_handling.html" class="md-nav__link">
       Exception handling
     </a>
   </li>
@@ -1560,7 +1506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="type_grammar.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/type_grammar.html" class="md-nav__link">
       Type grammar
     </a>
   </li>
@@ -1581,7 +1527,7 @@
     <label class="md-nav__link" for="nav-6-10">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="type_reflection.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/type_reflection.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Type reflection
@@ -1591,7 +1537,7 @@
       <label class="md-nav__title" for="nav-6-10">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="type_reflection.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/type_reflection.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Type reflection
@@ -1607,7 +1553,7 @@
 
 
   <li class="md-nav__item">
-    <a href="is_a.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/is_a.html" class="md-nav__link">
       is_a?
     </a>
   </li>
@@ -1620,7 +1566,7 @@
 
 
   <li class="md-nav__item">
-    <a href="nil_question.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/nil_question.html" class="md-nav__link">
       nil?
     </a>
   </li>
@@ -1633,7 +1579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="responds_to.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/responds_to.html" class="md-nav__link">
       responds_to?
     </a>
   </li>
@@ -1646,7 +1592,7 @@
 
 
   <li class="md-nav__item">
-    <a href="as.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/as.html" class="md-nav__link">
       as
     </a>
   </li>
@@ -1659,7 +1605,7 @@
 
 
   <li class="md-nav__item">
-    <a href="as_question.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/as_question.html" class="md-nav__link">
       as?
     </a>
   </li>
@@ -1672,7 +1618,7 @@
 
 
   <li class="md-nav__item">
-    <a href="typeof.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/typeof.html" class="md-nav__link">
       typeof
     </a>
   </li>
@@ -1698,7 +1644,7 @@
     <label class="md-nav__link" for="nav-6-11">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="macros/index.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/macros/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Macros
@@ -1708,7 +1654,7 @@
       <label class="md-nav__title" for="nav-6-11">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="macros/index.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/macros/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Macros
@@ -1724,7 +1670,7 @@
 
 
   <li class="md-nav__item">
-    <a href="macros/macro_methods.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/macros/macro_methods.html" class="md-nav__link">
       Macro methods
     </a>
   </li>
@@ -1737,7 +1683,7 @@
 
 
   <li class="md-nav__item">
-    <a href="macros/hooks.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/macros/hooks.html" class="md-nav__link">
       Hooks
     </a>
   </li>
@@ -1750,7 +1696,7 @@
 
 
   <li class="md-nav__item">
-    <a href="macros/fresh_variables.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/macros/fresh_variables.html" class="md-nav__link">
       Fresh variables
     </a>
   </li>
@@ -1776,7 +1722,7 @@
     <label class="md-nav__link" for="nav-6-12">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="annotations/index.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/annotations/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Annotations
@@ -1786,7 +1732,7 @@
       <label class="md-nav__title" for="nav-6-12">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="annotations/index.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/annotations/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Annotations
@@ -1802,7 +1748,7 @@
 
 
   <li class="md-nav__item">
-    <a href="annotations/built_in_annotations.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/annotations/built_in_annotations.html" class="md-nav__link">
       Built-in annotations
     </a>
   </li>
@@ -1828,7 +1774,7 @@
     <label class="md-nav__link" for="nav-6-13">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="low_level_primitives.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/low_level_primitives.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Low-level primitives
@@ -1838,7 +1784,7 @@
       <label class="md-nav__title" for="nav-6-13">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="low_level_primitives.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/low_level_primitives.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Low-level primitives
@@ -1854,7 +1800,7 @@
 
 
   <li class="md-nav__item">
-    <a href="pointerof.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/pointerof.html" class="md-nav__link">
       pointerof
     </a>
   </li>
@@ -1867,7 +1813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="sizeof.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/sizeof.html" class="md-nav__link">
       sizeof
     </a>
   </li>
@@ -1880,7 +1826,7 @@
 
 
   <li class="md-nav__item">
-    <a href="instance_sizeof.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/instance_sizeof.html" class="md-nav__link">
       instance_sizeof
     </a>
   </li>
@@ -1893,7 +1839,7 @@
 
 
   <li class="md-nav__item">
-    <a href="offsetof.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/offsetof.html" class="md-nav__link">
       offsetof
     </a>
   </li>
@@ -1906,7 +1852,7 @@
 
 
   <li class="md-nav__item">
-    <a href="declare_var.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/declare_var.html" class="md-nav__link">
       Uninitialized variable declaration
     </a>
   </li>
@@ -1932,7 +1878,7 @@
     <label class="md-nav__link" for="nav-6-14">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="compile_time_flags.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/compile_time_flags.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Compile-time flags
@@ -1942,7 +1888,7 @@
       <label class="md-nav__title" for="nav-6-14">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="compile_time_flags.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/compile_time_flags.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Compile-time flags
@@ -1958,7 +1904,7 @@
 
 
   <li class="md-nav__item">
-    <a href="cross-compilation.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/cross-compilation.html" class="md-nav__link">
       Cross-compilation
     </a>
   </li>
@@ -1984,7 +1930,7 @@
     <label class="md-nav__link" for="nav-6-15">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="c_bindings/index.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/c_bindings/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         C bindings
@@ -1994,7 +1940,7 @@
       <label class="md-nav__title" for="nav-6-15">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="c_bindings/index.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/c_bindings/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           C bindings
@@ -2010,7 +1956,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/lib.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/lib.html" class="md-nav__link">
       lib
     </a>
   </li>
@@ -2031,7 +1977,7 @@
     <label class="md-nav__link" for="nav-6-15-2">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="c_bindings/fun.html" class="md-nav__link"
+        <a href="../../syntax_and_semantics/c_bindings/fun.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         fun
@@ -2041,7 +1987,7 @@
       <label class="md-nav__title" for="nav-6-15-2">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="c_bindings/fun.html" class="md-nav__link"
+          <a href="../../syntax_and_semantics/c_bindings/fun.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           fun
@@ -2057,7 +2003,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/out.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/out.html" class="md-nav__link">
       out
     </a>
   </li>
@@ -2070,7 +2016,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/to_unsafe.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/to_unsafe.html" class="md-nav__link">
       to_unsafe
     </a>
   </li>
@@ -2088,7 +2034,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/struct.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/struct.html" class="md-nav__link">
       struct
     </a>
   </li>
@@ -2101,7 +2047,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/union.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/union.html" class="md-nav__link">
       union
     </a>
   </li>
@@ -2114,7 +2060,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/enum.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/enum.html" class="md-nav__link">
       enum
     </a>
   </li>
@@ -2127,7 +2073,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/variables.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/variables.html" class="md-nav__link">
       Variables
     </a>
   </li>
@@ -2140,7 +2086,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/constants.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/constants.html" class="md-nav__link">
       Constants
     </a>
   </li>
@@ -2153,7 +2099,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/type.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/type.html" class="md-nav__link">
       type
     </a>
   </li>
@@ -2166,7 +2112,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/alias.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/alias.html" class="md-nav__link">
       alias
     </a>
   </li>
@@ -2179,7 +2125,7 @@
 
 
   <li class="md-nav__item">
-    <a href="c_bindings/callbacks.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/c_bindings/callbacks.html" class="md-nav__link">
       Callbacks
     </a>
   </li>
@@ -2197,7 +2143,7 @@
 
 
   <li class="md-nav__item">
-    <a href="unsafe.html" class="md-nav__link">
+    <a href="../../syntax_and_semantics/unsafe.html" class="md-nav__link">
       Unsafe code
     </a>
   </li>
@@ -2223,7 +2169,7 @@
     <label class="md-nav__link" for="nav-7">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../conventions/index.html" class="md-nav__link"
+        <a href="../../conventions/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Conventions
@@ -2233,7 +2179,7 @@
       <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../conventions/index.html" class="md-nav__link"
+          <a href="../../conventions/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Conventions
@@ -2249,7 +2195,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../conventions/coding_style.html" class="md-nav__link">
+    <a href="../../conventions/coding_style.html" class="md-nav__link">
       Coding style
     </a>
   </li>
@@ -2262,7 +2208,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../conventions/documenting_code.html" class="md-nav__link">
+    <a href="../../conventions/documenting_code.html" class="md-nav__link">
       Documenting code
     </a>
   </li>
@@ -2288,7 +2234,7 @@
     <label class="md-nav__link" for="nav-8">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../database/index.html" class="md-nav__link"
+        <a href="../../database/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Database
@@ -2298,7 +2244,7 @@
       <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../database/index.html" class="md-nav__link"
+          <a href="../../database/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Database
@@ -2314,7 +2260,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../database/connection.html" class="md-nav__link">
+    <a href="../../database/connection.html" class="md-nav__link">
       Connection
     </a>
   </li>
@@ -2327,7 +2273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../database/connection_pool.html" class="md-nav__link">
+    <a href="../../database/connection_pool.html" class="md-nav__link">
       Connection pool
     </a>
   </li>
@@ -2340,7 +2286,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../database/transactions.html" class="md-nav__link">
+    <a href="../../database/transactions.html" class="md-nav__link">
       Transactions
     </a>
   </li>
@@ -2366,7 +2312,7 @@
     <label class="md-nav__link" for="nav-9">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../guides/index.html" class="md-nav__link"
+        <a href="../../guides/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Guides
@@ -2376,7 +2322,7 @@
       <label class="md-nav__title" for="nav-9">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../guides/index.html" class="md-nav__link"
+          <a href="../../guides/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Guides
@@ -2392,7 +2338,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guides/performance.html" class="md-nav__link">
+    <a href="../../guides/performance.html" class="md-nav__link">
       Performance
     </a>
   </li>
@@ -2405,7 +2351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guides/concurrency.html" class="md-nav__link">
+    <a href="../../guides/concurrency.html" class="md-nav__link">
       Concurrency
     </a>
   </li>
@@ -2418,7 +2364,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guides/testing.html" class="md-nav__link">
+    <a href="../../guides/testing.html" class="md-nav__link">
       Testing
     </a>
   </li>
@@ -2439,7 +2385,7 @@
     <label class="md-nav__link" for="nav-9-4">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../guides/writing_shards.html" class="md-nav__link"
+        <a href="../../guides/writing_shards.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Writing Shards
@@ -2449,7 +2395,7 @@
       <label class="md-nav__title" for="nav-9-4">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../guides/writing_shards.html" class="md-nav__link"
+          <a href="../../guides/writing_shards.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Writing Shards
@@ -2465,7 +2411,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guides/hosting/github.html" class="md-nav__link">
+    <a href="../../guides/hosting/github.html" class="md-nav__link">
       Hosting on GitHub
     </a>
   </li>
@@ -2478,7 +2424,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guides/hosting/gitlab.html" class="md-nav__link">
+    <a href="../../guides/hosting/gitlab.html" class="md-nav__link">
       Hosting on GitLab
     </a>
   </li>
@@ -2504,7 +2450,7 @@
     <label class="md-nav__link" for="nav-9-5">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../guides/ci/index.html" class="md-nav__link"
+        <a href="../../guides/ci/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Continuous Integration
@@ -2514,7 +2460,7 @@
       <label class="md-nav__title" for="nav-9-5">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../guides/ci/index.html" class="md-nav__link"
+          <a href="../../guides/ci/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Continuous Integration
@@ -2530,7 +2476,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guides/ci/travis.html" class="md-nav__link">
+    <a href="../../guides/ci/travis.html" class="md-nav__link">
       Using Travis CI
     </a>
   </li>
@@ -2543,7 +2489,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guides/ci/circleci.html" class="md-nav__link">
+    <a href="../../guides/ci/circleci.html" class="md-nav__link">
       Using CircleCI
     </a>
   </li>
@@ -2561,7 +2507,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../guides/static_linking.html" class="md-nav__link">
+    <a href="../../guides/static_linking.html" class="md-nav__link">
       Static Linking
     </a>
   </li>
@@ -2579,7 +2525,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../platform_support.html" class="md-nav__link">
+    <a href="../../platform_support.html" class="md-nav__link">
       Platform Support
     </a>
   </li>
@@ -2590,17 +2536,19 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
     <label class="md-nav__link" for="nav-11">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../tutorials/index.html" class="md-nav__link"
+        <a href="../index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Tutorials
@@ -2610,7 +2558,7 @@
       <label class="md-nav__title" for="nav-11">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../tutorials/index.html" class="md-nav__link"
+          <a href="../index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Tutorials
@@ -2624,17 +2572,19 @@
           
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1" checked>
     
     <label class="md-nav__link" for="nav-11-1">
       <span class="md-nav__icon md-icon"></span>
       
-        <a href="../tutorials/01_basics/index.html" class="md-nav__link"
+        <a href="index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
         Basics
@@ -2644,7 +2594,7 @@
       <label class="md-nav__title" for="nav-11-1">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../tutorials/01_basics/index.html" class="md-nav__link"
+          <a href="index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Basics
@@ -2660,7 +2610,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_basics/01_hello_world.html" class="md-nav__link">
+    <a href="01_hello_world.html" class="md-nav__link">
       Hello World
     </a>
   </li>
@@ -2673,7 +2623,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_basics/02_variables.html" class="md-nav__link">
+    <a href="02_variables.html" class="md-nav__link">
       Variables
     </a>
   </li>
@@ -2686,7 +2636,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_basics/03_math.html" class="md-nav__link">
+    <a href="03_math.html" class="md-nav__link">
       Math
     </a>
   </li>
@@ -2699,7 +2649,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_basics/04_strings.html" class="md-nav__link">
+    <a href="04_strings.html" class="md-nav__link">
       Strings
     </a>
   </li>
@@ -2712,7 +2662,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/01_basics/05_control_flow.html" class="md-nav__link">
+    <a href="05_control_flow.html" class="md-nav__link">
       Control Flow
     </a>
   </li>
@@ -2723,11 +2673,81 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../tutorials/01_basics/06_methods.html" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="06_methods.html" class="md-nav__link md-nav__link--active"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Methods
+        </a>
+      </label>
+    
+    <a href="06_methods.html" class="md-nav__link md-nav__link--active">
       Methods
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+    <nav class="md-nav" aria-label="Arguments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-arguments" class="md-nav__link">
+    Default arguments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-restrictions" class="md-nav__link">
+    Type Restrictions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overloading" class="md-nav__link">
+    Overloading
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2743,7 +2763,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/xx_types/index.html" class="md-nav__link">
+    <a href="../xx_types/index.html" class="md-nav__link">
       Types
     </a>
   </li>
@@ -2779,15 +2799,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#passing-by-value" class="md-nav__link">
-    Passing by value
+  <a href="#arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+    <nav class="md-nav" aria-label="Arguments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-arguments" class="md-nav__link">
+    Default arguments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-restrictions" class="md-nav__link">
+    Type Restrictions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#inheritance" class="md-nav__link">
-    Inheritance
+  <a href="#overloading" class="md-nav__link">
+    Overloading
   </a>
   
 </li>
@@ -2804,86 +2844,97 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/syntax_and_semantics/structs.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/crystal-lang/crystal-book/tree/master/docs/tutorials/01_basics/06_methods.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="structs">Structs<a class="headerlink" href="#structs" title="Permanent link">&para;</a></h1>
-<p>Instead of defining a type with <code>class</code> you can do so with <code>struct</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">struct</span> <span class="nc">Point</span>
-  <span class="bp">property</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
-
-  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="vi">@x</span> <span class="p">:</span> <span class="n">Int32</span><span class="p">,</span> <span class="vi">@y</span> <span class="p">:</span> <span class="n">Int32</span><span class="p">)</span>
-  <span class="k">end</span>
+                <h1 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h1>
+<p>To avoid duplication of the same message, instead of using a variable we can
+define a method and call it multiple times.</p>
+<p>A method definition is indicated by the keyword <code>def</code> followed by the method name.
+Every expression until the keyword <code>end</code> is part of the method body.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello Penny!&quot;</span>
 <span class="k">end</span>
+
+<span class="n">say_hello</span>
+<span class="n">say_hello</span>
+<span class="n">say_hello</span><span class="p">()</span> <span class="c1"># syntactically equivalent method call with parenthesis</span>
 </code></pre></div>
-<p>Structs inherit from <a href="https://crystal-lang.org/api/latest/Value.html">Value</a> so they are allocated on the stack and passed by value: when passed to methods, returned from methods or assigned to variables, a copy of the value is actually passed (while classes inherit from <a href="https://crystal-lang.org/api/latest/Reference.html">Reference</a>, are allocated on the heap and passed by reference).</p>
-<p>Therefore structs are mostly useful for immutable data types and/or stateless wrappers of other types, usually for performance reasons to avoid lots of small memory allocations when passing small copies might be more efficient (for more details, see the <a href="https://crystal-lang.org/docs/guides/performance.html#use-structs-when-possible">performance guide</a>).</p>
-<p>Mutable structs are still allowed, but you should be careful when writing code involving mutability if you want to avoid surprises that are described below.</p>
-<h2 id="passing-by-value">Passing by value<a class="headerlink" href="#passing-by-value" title="Permanent link">&para;</a></h2>
-<p>A struct is <em>always</em> passed by value, even when you return <code>self</code> from the method of that struct:</p>
-<div class="highlight"><pre><span></span><code><span class="k">struct</span> <span class="nc">Counter</span>
-  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="vi">@count</span> <span class="p">:</span> <span class="n">Int32</span><span class="p">)</span>
-  <span class="k">end</span>
-
-  <span class="k">def</span> <span class="nf">plus</span>
-    <span class="vi">@count</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">self</span>
-  <span class="k">end</span>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Method calls are unambiguously indicated by parenthesis after the name, but it can be omitted. It would only be
+necessary for disambiguation, for example if <code>say_hello</code> was also a local variable.</p>
+</div>
+<h2 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h2>
+<p>What if we want to greet different people, but all in the same manner?
+Instead of writing individual messages, we can define a method that allows customization through a parameter.
+A parameter is like a local variable inside the method body. Parameters are declared after the method name in parenthesis.
+When calling a method, you can pass in arguments which are mapped as values for the method's parameters.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">recipient</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">recipient</span><span class="si">}</span><span class="s2">!&quot;</span>
 <span class="k">end</span>
 
-<span class="n">counter</span> <span class="o">=</span> <span class="n">Counter</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">counter</span><span class="o">.</span><span class="n">plus</span><span class="o">.</span><span class="n">plus</span> <span class="c1"># =&gt; Counter(@count=2)</span>
-<span class="nb">puts</span> <span class="n">counter</span>      <span class="c1"># =&gt; Counter(@count=1)</span>
+<span class="n">say_hello</span> <span class="s2">&quot;World&quot;</span>
+<span class="n">say_hello</span> <span class="s2">&quot;Crystal&quot;</span>
 </code></pre></div>
-<p>Notice that the chained calls of <code>plus</code> return the expected result, but only the first call to it modifies the variable <code>counter</code>, as the second call operates on the <em>copy</em> of the struct passed to it from the first call, and this copy is discarded after the expression is executed.</p>
-<p>You should also be careful when working on mutable types inside of the struct:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Klass</span>
-  <span class="bp">property</span> <span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;str&quot;</span><span class="o">]</span>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Arguments at method calls are typically placed in parenthesis, but it can often be omitted. <code>say_hello "World"</code>
+and <code>say_hello("World")</code> are syntactically equivalent.</p>
+<p>It's generally recommended to use parenthesis because it avoids ambiguity. But they're often omitted if the
+expression reads like natural language.</p>
+</div>
+<h3 id="default-arguments">Default arguments<a class="headerlink" href="#default-arguments" title="Permanent link">&para;</a></h3>
+<p>Arguments can be assigned a default value. It is used in case the argument is missing in the method call. Usually,
+arguments are mandatory but when there's a default value, it can be omitted.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">recipient</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">recipient</span><span class="si">}</span><span class="s2">!&quot;</span>
 <span class="k">end</span>
 
-<span class="k">struct</span> <span class="nc">Strukt</span>
-  <span class="bp">property</span> <span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;str&quot;</span><span class="o">]</span>
-<span class="k">end</span>
-
-<span class="k">def</span> <span class="nf">modify</span><span class="p">(</span><span class="n">object</span><span class="p">)</span>
-  <span class="n">object</span><span class="o">.</span><span class="n">array</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;foo&quot;</span>
-  <span class="n">object</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;new&quot;</span><span class="o">]</span>
-  <span class="n">object</span><span class="o">.</span><span class="n">array</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;bar&quot;</span>
-<span class="k">end</span>
-
-<span class="n">klass</span> <span class="o">=</span> <span class="n">Klass</span><span class="o">.</span><span class="n">new</span>
-<span class="nb">puts</span> <span class="n">modify</span><span class="p">(</span><span class="n">klass</span><span class="p">)</span> <span class="c1"># =&gt; [&quot;new&quot;, &quot;bar&quot;]</span>
-<span class="nb">puts</span> <span class="n">klass</span><span class="o">.</span><span class="n">array</span>   <span class="c1"># =&gt; [&quot;new&quot;, &quot;bar&quot;]</span>
-
-<span class="n">strukt</span> <span class="o">=</span> <span class="n">Strukt</span><span class="o">.</span><span class="n">new</span>
-<span class="nb">puts</span> <span class="n">modify</span><span class="p">(</span><span class="n">strukt</span><span class="p">)</span> <span class="c1"># =&gt; [&quot;new&quot;, &quot;bar&quot;]</span>
-<span class="nb">puts</span> <span class="n">strukt</span><span class="o">.</span><span class="n">array</span>   <span class="c1"># =&gt; [&quot;str&quot;, &quot;foo&quot;]</span>
+<span class="n">say_hello</span>
+<span class="n">say_hello</span> <span class="s2">&quot;Crystal&quot;</span>
 </code></pre></div>
-<p>What happens with the <code>strukt</code> here:</p>
-<ul>
-<li><code>Array</code> is passed by reference, so the reference to <code>["str"]</code> is stored in the property of <code>strukt</code></li>
-<li>when <code>strukt</code> is passed to <code>modify</code>, a <em>copy</em> of the <code>strukt</code> is passed with the reference to array inside it</li>
-<li>the array referenced by <code>array</code> is modified (element inside it is added) by <code>object.array &lt;&lt; "foo"</code></li>
-<li>this is also reflected in the original <code>strukt</code> as it holds reference to the same array</li>
-<li><code>object.array = ["new"]</code> replaces the reference in the <em>copy</em> of <code>strukt</code> with the reference to the new array</li>
-<li><code>object.array &lt;&lt; "bar"</code> appends to this newly created array</li>
-<li><code>modify</code> returns the reference to this new array and its content is printed</li>
-<li>the reference to this new array was held only in the <em>copy</em> of <code>strukt</code>, but not in the original, so that's why the original <code>strukt</code> only retained the result of the first statement, but not of the other two statements</li>
-</ul>
-<p><code>Klass</code> is a class, so it is passed by reference to <code>modify</code>, and <code>object.array = ["new"]</code> saves the reference to the newly created array in the original <code>klass</code> object, not in the copy as it was with the <code>strukt</code>.</p>
-<h2 id="inheritance">Inheritance<a class="headerlink" href="#inheritance" title="Permanent link">&para;</a></h2>
-<ul>
-<li>A struct implicitly inherits from <a href="https://crystal-lang.org/api/latest/Struct.html">Struct</a>, which inherits from <a href="https://crystal-lang.org/api/latest/Value.html">Value</a>. A class implicitly inherits from <a href="https://crystal-lang.org/api/latest/Reference.html">Reference</a>.</li>
-<li>A struct cannot inherit from a non-abstract struct.</li>
-</ul>
-<p>The second point has a reason to it: a struct has a very well defined memory layout. For example, the above <code>Point</code> struct occupies 8 bytes. If you have an array of points the points are embedded inside the array's buffer:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># The array&#39;s buffer will have 8 bytes dedicated to each Point</span>
-<span class="n">ary</span> <span class="o">=</span> <span class="o">[]</span> <span class="k">of</span> <span class="n">Point</span>
+<h2 id="type-restrictions">Type Restrictions<a class="headerlink" href="#type-restrictions" title="Permanent link">&para;</a></h2>
+<p>Our example method expects <code>recipient</code> to be a <code>String</code>. But any other type would work as well. Try <code>say_hello 6</code>
+for example.</p>
+<p>This isn't necessarily a problem for this method. Using any other type would be valid code.
+But semantically we want to greet people with a name as a <code>String</code>.</p>
+<p>Type restrictions limit the allowed type of an argument. They come after the argument name, separated by a colon:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">recipient</span> <span class="p">:</span> <span class="n">String</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">recipient</span><span class="si">}</span><span class="s2">!&quot;</span>
+<span class="k">end</span>
+
+<span class="n">say_hello</span> <span class="s2">&quot;World&quot;</span>
+<span class="n">say_hello</span> <span class="s2">&quot;Crystal&quot;</span>
+
+<span class="c1"># Now this expression doesn&#39;t compile:</span>
+<span class="c1"># say_hello 6</span>
 </code></pre></div>
-<p>If <code>Point</code> is inherited, an array of such type should also account for the fact that other types can be inside it, so the size of each element should grow to accommodate that. That is certainly unexpected. So, non-abstract structs can't be inherited from. Abstract structs, on the other hand, will have descendants, so it is expected that an array of them will account for the possibility of having multiple types inside it.</p>
-<p>A struct can also include modules and can be generic, just like a class.</p>
+<p>Now names cannot be numbers or other data types anymore. This doesn't mean you can't
+greet people with a number as a name. The number just needs to be expressed as a string.
+Try <code>say_hello "6"</code> for example.</p>
+<h2 id="overloading">Overloading<a class="headerlink" href="#overloading" title="Permanent link">&para;</a></h2>
+<p>Restricting the type of an argument can be used for positional overloading.
+When a method has an unrestricted argument like <code>say_hello(recipient)</code>, <em>all</em> calls to a method <code>say_hello</code> go to that method.
+But with overloading several methods of the same name can exist with different argument type restrictions. Each call is routed
+to the most fitting overload.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="c1"># This methods greets *recipient*.</span>
+<span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">recipient</span> <span class="p">:</span> <span class="n">String</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="n">recipient</span><span class="si">}</span><span class="s2">!&quot;</span>
+<span class="k">end</span>
+
+<span class="c1"># This method greets *times* times.</span>
+<span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">times</span> <span class="p">:</span> <span class="n">Int32</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello &quot;</span> <span class="o">*</span> <span class="n">times</span>
+<span class="k">end</span>
+
+<span class="n">say_hello</span> <span class="s2">&quot;World&quot;</span>
+<span class="n">say_hello</span> <span class="mi">3</span>
+</code></pre></div>
+<p>Overloading is not only defined by type restrictions. The number of arguments as well as named arguments are also
+relevant characteristics.</p>
                 
               
               
@@ -2902,7 +2953,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="generics.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="05_control_flow.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2911,19 +2962,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Generics
+                Control Flow
               </div>
             </div>
           </a>
         
         
-          <a href="constants.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../xx_types/index.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Constants
+                Types
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -2950,28 +3001,28 @@
       
     </div>
     
-      <script src="../assets/javascripts/vendor.93c04032.min.js"></script>
-      <script src="../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
-        <script src="../assets/vendor/codemirror/codemirror.min.js"></script>
+        <script src="../../assets/vendor/codemirror/codemirror.min.js"></script>
       
-        <script src="../assets/vendor/codemirror/mode/crystal/crystal.min.js"></script>
+        <script src="../../assets/vendor/codemirror/mode/crystal/crystal.min.js"></script>
       
-        <script src="../assets/vendor/carcin-play/carcin.js"></script>
+        <script src="../../assets/vendor/carcin-play/carcin.js"></script>
       
-        <script src="../assets/vendor/carcin-play/carcin-play.js"></script>
+        <script src="../../assets/vendor/carcin-play/carcin-play.js"></script>
       
-        <script src="../assets/crystal-play.js"></script>
+        <script src="../../assets/crystal-play.js"></script>
       
     
   </body>
