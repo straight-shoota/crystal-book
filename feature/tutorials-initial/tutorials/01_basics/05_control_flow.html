@@ -2729,12 +2729,52 @@
     Boolean Algebra
   </a>
   
+    <nav class="md-nav" aria-label="Boolean Algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#truthiness" class="md-nav__link">
+    Truthiness
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
+  <a href="#control-flow_1" class="md-nav__link">
+    Control Flow
+  </a>
+  
+    <nav class="md-nav" aria-label="Control Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#conditionals" class="md-nav__link">
     Conditionals
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#else" class="md-nav__link">
+    Else
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-branches" class="md-nav__link">
+    More branches
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2837,12 +2877,52 @@
     Boolean Algebra
   </a>
   
+    <nav class="md-nav" aria-label="Boolean Algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#truthiness" class="md-nav__link">
+    Truthiness
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
+  <a href="#control-flow_1" class="md-nav__link">
+    Control Flow
+  </a>
+  
+    <nav class="md-nav" aria-label="Control Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#conditionals" class="md-nav__link">
     Conditionals
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#else" class="md-nav__link">
+    Else
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-branches" class="md-nav__link">
+    More branches
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2885,12 +2965,13 @@ b = false
 p! a &amp;&amp; b, # AND
    a || b, # OR
    !a,     # NOT
-   a != b, # XOR
+   a != b, # inequivalence (XOR)
    a == b  # equivalence
 </code></pre></div>
 <p>You can try flicking the values of <code>a</code> and <code>b</code> to see the operator behaviour for different input values.</p>
+<h3 id="truthiness">Truthiness<a class="headerlink" href="#truthiness" title="Permanent link">&para;</a></h3>
 <p>Boolean algebra however is not only defined for boolean types proper. All values have an implicit truthiness: <code>nil</code>, <code>false</code>
-and null pointers (just for completeness, will be covered later) are <em>falsey</em>. Any other value is <em>truthy</em>.</p>
+and null pointers (just for completeness, we cover that later) are <em>falsey</em>. Any other value is <em>truthy</em>.</p>
 <p>Let's replace <code>true</code> and <code>false</code> in the above example with other values, for example <code>"foo"</code> and <code>nil</code>.</p>
 <div class="crystal-play highlight"><pre><span></span><code>a = &quot;foo&quot;
 b = nil
@@ -2898,17 +2979,116 @@ b = nil
 p! a &amp;&amp; b, # AND
    a || b, # OR
    !a,     # NOT
-   a != b, # XOR
+   a != b, # inequivalence (XOR)
    a == b  # equivalence
 </code></pre></div>
 <p>The <code>AND</code> and <code>OR</code> operators return the first operand value matching the operator's truthiness.</p>
-<div class="crystal-play highlight"><pre><span></span><code>p! &quot;foo&quot; &amp;&amp; nil
-p! &quot;foo&quot; &amp;&amp; false
-p! false || &quot;foo&quot;
-p! &quot;bar&quot; || &quot;foo&quot;
+<div class="crystal-play highlight"><pre><span></span><code>p! &quot;foo&quot; &amp;&amp; nil,
+   &quot;foo&quot; &amp;&amp; false,
+   false || &quot;foo&quot;,
+   &quot;bar&quot; || &quot;foo&quot;
 </code></pre></div>
 <p>The <code>NOT</code>, <code>XOR</code> and equivalence operators always return a <code>Bool</code> value (<code>true</code> or <code>false</code>).</p>
-<h2 id="conditionals">Conditionals<a class="headerlink" href="#conditionals" title="Permanent link">&para;</a></h2>
+<h2 id="control-flow_1">Control Flow<a class="headerlink" href="#control-flow_1" title="Permanent link">&para;</a></h2>
+<p>Controlling the flow of a program means to take different paths based on conditions.
+Up until now, every program in this tutorial has been a sequential series of expressions.
+Now this is going to change.</p>
+<h3 id="conditionals">Conditionals<a class="headerlink" href="#conditionals" title="Permanent link">&para;</a></h3>
+<p>A conditional clause puts a branch of code behind a gate that only opens if the condition is met.</p>
+<p>In a most basic form it consists of a keyword <code>if</code> followed by an expression serving as condition.
+The condition is met when the return value of the expression is <em>truthy</em>.
+All subsequent expressions are part of the branch until closes with the keyword <code>end</code>.</p>
+<p>Per convention we indent nested branches by two spaces.</p>
+<p>The following example prints the message only if it meets the condition to start with <code>Hello</code>.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+
+<span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello to you, too!&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Technically, this program still runs in a predefined order. The fixed message always matches and makes the condition truthy.
+But let's assume we don't define the value of the message in the source code. It could just as well come from user input,
+for example a chat client.</p>
+</div>
+<p>If the message has a value that does not start with <code>Hello</code>, the conditional branch skips and the program prints nothing.</p>
+<p>The condition expression can be more complex. With boolean algebra we can construct a condition that accepts either <code>Hello</code>
+or <code>Hi</code>:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+
+<span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span> <span class="o">||</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hi&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hey there!&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Let's turn the condition around: Only print the message if it does <em>not</em>  start with <code>Hello</code>.
+That's just a minor deviation from the previous example: We can use the negation operator (<code>!</code>) to turn the condition
+into the opposite.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+
+<span class="k">if</span> <span class="o">!</span><span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;I didn&#39;t understand that.&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>An alternative is to replace <code>if</code> with the keyword <code>unless</code> which expects just the opposite truthiness. <code>unless x</code> is equivalent to <code>if !x</code>.</p>
+<h3 id="else">Else<a class="headerlink" href="#else" title="Permanent link">&para;</a></h3>
+<p>Let's refine our program and react in both cases, whether the message meets the condition or not.</p>
+<p>We can do this as two separate conditionals with negated conditions:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+
+<span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello to you, too!&quot;</span>
+<span class="k">end</span>
+
+<span class="k">if</span> <span class="o">!</span><span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;I didn&#39;t understand that.&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>This works but there are two drawbacks: The condition expression <code>message.starts_with?("Hello")</code> evaluates twice, that's inefficient.
+And if we later change the condition in one place (maybe allow <code>Hi</code> as well), we might forget changing the other one as well.</p>
+<p>A conditional can have multiple branches. The alternate branch is indicated by the keyword <code>else</code>. It executes if the condition is not met.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World&quot;</span>
+
+<span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello to you, too!&quot;</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">&quot;I didn&#39;t understand that.&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+<h3 id="more-branches">More branches<a class="headerlink" href="#more-branches" title="Permanent link">&para;</a></h3>
+<p>Our program only reacts to <code>Hello</code>, but we want more interaction. Let's add a branch to respond to <code>Bye</code> as well.
+We can have branches for different conditions in the same conditional. It's like an <code>else</code> with another
+integrated <code>if</code>. Hence the keyword is <code>elsif</code>:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Bye World&quot;</span>
+
+<span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello to you, too!&quot;</span>
+<span class="k">elsif</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Bye&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;See you later!&quot;</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">&quot;I didn&#39;t understand that.&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>The <code>else</code> branch still only executes if neither of the previous conditions is met. It can always be omitted, though.</p>
+<p>Note that the different branches are mutually exclusive and conditions evaluate from top to bottom.
+In the above example that doesn't matter because both conditions can't be truthy at the same time (the message can't start with both <code>Hello</code> and <code>Bye</code>).
+But we can add an alternative condition that is not exclusive to demonstrate this:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Crystal&quot;</span>
+
+<span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello to you, too!&quot;</span>
+<span class="k">elsif</span> <span class="n">message</span><span class="o">.</span><span class="n">includes?</span><span class="p">(</span><span class="s2">&quot;Crystal&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Shine bright like a crystal.&quot;</span>
+<span class="k">end</span>
+
+<span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">includes?</span><span class="p">(</span><span class="s2">&quot;Crystal&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Shine bright like a crystal.&quot;</span>
+<span class="k">elsif</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello to you, too!&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Both clauses have branches with the same conditions but in different order and they behave differently.
+The first matching condition selects which branch executes.</p>
                 
               
               

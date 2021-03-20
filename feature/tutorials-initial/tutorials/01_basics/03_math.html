@@ -2973,7 +2973,6 @@ The value of the expression is the result of the operation.</p>
    2 // 3, # floor division
    3 % 2,  # modulus
    -1,     # negation (unary)
-   !4      # faculty (unary)
 </code></pre></div>
 <p>As you can see, the result of most of these operations between integer operands is also an integer value.
 The division operator (<code>/</code>) is an exception. It always returns a float value. The floor division operator (<code>//</code>) however returns an integer value, but it's obviously reduced to integer precision.
@@ -2983,15 +2982,23 @@ An operation between integer and float operands always returns a float value. Ot
 <p>A full list of operators is available in <a href="../../syntax_and_semantics/operators.html#arithmetic-operators">the Operator reference</a>.</p>
 </div>
 <h4 id="precedence">Precedence<a class="headerlink" href="#precedence" title="Permanent link">&para;</a></h4>
-<div class="admonition todo">
-<p class="admonition-title">precedence</p>
+<p>When several operators are combined, the question arises in which order are they executed.
+In math there are several rules, like multiplication and division take precedence over addition and subtraction.
+Crystal operators implement these precedence rules.</p>
+<p>A tool to structure operations are parentheses. An operator expression in parenthesis always takes precedence over external operators.</p>
+<div class="crystal-play highlight"><pre><span></span><code>p! 4 + 5 * 2,
+   (4 + 5) * 2
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The entire precedence rules are quite extensive in the <a href="../../syntax_and_semantics/operators.html#operator-precedence">the Operator reference</a>.</p>
 </div>
 <h3 id="number-methods">Number Methods<a class="headerlink" href="#number-methods" title="Permanent link">&para;</a></h3>
 <p>Some less common math operations are not operators, but named methods.</p>
 <div class="crystal-play highlight"><pre><span></span><code>p! -5.abs,    # absolute value
    4.3.round, # round to nearest integer
    5.even?,   # odd/even check
-   10.gcd    # greatest common divisor
+   10.gcd     # greatest common divisor
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -3001,7 +3008,7 @@ An operation between integer and float operands always returns a float value. Ot
 <p>Some arithmetic methods are not defined on the number types directly, but in the <code>Math</code> namespace.</p>
 <div class="crystal-play highlight"><pre><span></span><code>p! Math.cos(1),      # cosine
    Math.sin(1),      # sine
-   Math.tan(1),      # tangens
+   Math.tan(1),      # tangent
    Math.log(42),     # natural logarithm
    Math.log10(312),  # logarithm to base 10
    Math.log(312, 5), # logarithm to base 5

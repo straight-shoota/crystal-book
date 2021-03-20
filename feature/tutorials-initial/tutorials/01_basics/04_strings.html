@@ -2754,6 +2754,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#stripping" class="md-nav__link">
+    Stripping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replacing" class="md-nav__link">
+    Replacing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation_1" class="md-nav__link">
+    Interpolation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#regex" class="md-nav__link">
     Regex (?)
   </a>
@@ -2917,6 +2938,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#stripping" class="md-nav__link">
+    Stripping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#replacing" class="md-nav__link">
+    Replacing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpolation_1" class="md-nav__link">
+    Interpolation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#regex" class="md-nav__link">
     Regex (?)
   </a>
@@ -3035,8 +3077,41 @@ has a length, i.e. the number of characters it contains. This value is available
    <span class="n">blank_string</span><span class="o">.</span><span class="n">presence</span>
 </code></pre></div>
 <h2 id="parts-of-a-string">Parts of a string<a class="headerlink" href="#parts-of-a-string" title="Permanent link">&para;</a></h2>
+<p>A couple of methods allow to test if a string includes another one:</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">includes?</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">ends_with?</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="dissection">Dissection<a class="headerlink" href="#dissection" title="Permanent link">&para;</a></h2>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;W&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;l&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">reverse_index</span><span class="p">(</span><span class="s2">&quot;l&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">reverse_index</span><span class="p">(</span><span class="s2">&quot;ll&quot;</span><span class="p">)</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">char_at</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span><span class="p">,</span>
+</code></pre></div>
 <h2 id="comparison">Comparison<a class="headerlink" href="#comparison" title="Permanent link">&para;</a></h2>
+<div class="crystal-play highlight"><pre><span></span><code><span class="bp">p!</span> <span class="s2">&quot;Hello World!&quot;</span> <span class="o">&lt;=&gt;</span> <span class="s2">&quot;Hello Crystal!&quot;</span>
+   <span class="s2">&quot;Hello World&quot;</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">,</span> <span class="ss">case_insensitive</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="stripping">Stripping<a class="headerlink" href="#stripping" title="Permanent link">&para;</a></h2>
+<div class="crystal-play highlight"><pre><span></span><code><span class="bp">p!</span> <span class="s2">&quot;Hello World!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">chomp</span><span class="p">,</span>
+   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">chomp</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">),</span>
+   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">lchop</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">),</span>
+   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">rchop</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">),</span>
+   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">rchop</span><span class="p">(</span><span class="s2">&quot;Crystal&quot;</span><span class="p">),</span>
+   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">rchop?</span><span class="p">(</span><span class="s2">&quot;Crystal&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="replacing">Replacing<a class="headerlink" href="#replacing" title="Permanent link">&para;</a></h2>
+<div class="crystal-play highlight"><pre><span></span><code><span class="bp">p!</span> <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="s2">&quot;Crystal&quot;</span><span class="p">),</span>
+   <span class="s2">&quot;Hello World! Hello Crystal!&quot;</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Hola&quot;</span><span class="p">),</span>
+   <span class="s2">&quot;Hello World! Hello Crystal!&quot;</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Hola&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="interpolation_1">Interpolation<a class="headerlink" href="#interpolation_1" title="Permanent link">&para;</a></h2>
 <h2 id="regex">Regex (?)<a class="headerlink" href="#regex" title="Permanent link">&para;</a></h2>
 <h2 id="iteration">Iteration (?)<a class="headerlink" href="#iteration" title="Permanent link">&para;</a></h2>
 <div class="admonition tip">
