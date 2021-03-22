@@ -9,7 +9,7 @@
       
       
       
-        <link rel="canonical" href="https://crystal-lang.org/reference/tutorials/01_basics/04_strings.html">
+        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/tutorials/01_basics/04_strings.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#string-operations" class="md-skip">
+        <a href="#strings" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -2733,57 +2733,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parts-of-a-string" class="md-nav__link">
-    Parts of a string
+  <a href="#equality-and-comparison" class="md-nav__link">
+    Equality and Comparison
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dissection" class="md-nav__link">
-    Dissection
+  <a href="#partial-components" class="md-nav__link">
+    Partial Components
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comparison" class="md-nav__link">
-    Comparison
+  <a href="#extracting-substrings" class="md-nav__link">
+    Extracting Substrings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#stripping" class="md-nav__link">
-    Stripping
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#replacing" class="md-nav__link">
-    Replacing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interpolation_1" class="md-nav__link">
-    Interpolation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#regex" class="md-nav__link">
-    Regex (?)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iteration" class="md-nav__link">
-    Iteration (?)
+  <a href="#substitution" class="md-nav__link">
+    Substitution
   </a>
   
 </li>
@@ -2823,19 +2795,6 @@
         
       </ul>
     </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../xx_types/index.html" class="md-nav__link">
-      Types
-    </a>
   </li>
 
         
@@ -2917,57 +2876,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parts-of-a-string" class="md-nav__link">
-    Parts of a string
+  <a href="#equality-and-comparison" class="md-nav__link">
+    Equality and Comparison
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dissection" class="md-nav__link">
-    Dissection
+  <a href="#partial-components" class="md-nav__link">
+    Partial Components
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comparison" class="md-nav__link">
-    Comparison
+  <a href="#extracting-substrings" class="md-nav__link">
+    Extracting Substrings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#stripping" class="md-nav__link">
-    Stripping
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#replacing" class="md-nav__link">
-    Replacing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#interpolation_1" class="md-nav__link">
-    Interpolation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#regex" class="md-nav__link">
-    Regex (?)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#iteration" class="md-nav__link">
-    Iteration (?)
+  <a href="#substitution" class="md-nav__link">
+    Substitution
   </a>
   
 </li>
@@ -2989,7 +2920,7 @@
                   </a>
                 
                 
-                <h1 id="string-operations">String Operations<a class="headerlink" href="#string-operations" title="Permanent link">&para;</a></h1>
+                <h1 id="strings">Strings<a class="headerlink" href="#strings" title="Permanent link">&para;</a></h1>
 <p>In the previous lessons we have already made an acquaintance with a major building block
 of most programs: strings. Let's recapitulate the basic properties:</p>
 <p>A <a href="https://en.wikipedia.org/wiki/String_(computer_science)">string</a> is a sequence of <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> characters encoded in <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a>.
@@ -3076,44 +3007,90 @@ has a length, i.e. the number of characters it contains. This value is available
 <span class="bp">p!</span> <span class="n">blank_string</span><span class="o">.</span><span class="n">blank?</span><span class="p">,</span>
    <span class="n">blank_string</span><span class="o">.</span><span class="n">presence</span>
 </code></pre></div>
-<h2 id="parts-of-a-string">Parts of a string<a class="headerlink" href="#parts-of-a-string" title="Permanent link">&para;</a></h2>
-<p>A couple of methods allow to test if a string includes another one:</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
-<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">includes?</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">),</span>
-   <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">),</span>
-   <span class="n">message</span><span class="o">.</span><span class="n">ends_with?</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="dissection">Dissection<a class="headerlink" href="#dissection" title="Permanent link">&para;</a></h2>
+<h2 id="equality-and-comparison">Equality and Comparison<a class="headerlink" href="#equality-and-comparison" title="Permanent link">&para;</a></h2>
+<p>You can test two strings for equality with the equality operator (<code>==</code>) and compare them with the
+comparison operator (<code>&lt;=&gt;</code>). Both compare the strings strictly character by character.
+Remember, <code>&lt;=&gt;</code> returns an integer indicating the relationship between both operands,
+and <code>==</code> returns <code>true</code> if the comparison result it <code>0</code>, i.e. both values compare equally.</p>
+<p>There is however also a <code>#compare</code> method which offers case insensitive comparison.</p>
 <div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
 
-<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;W&quot;</span><span class="p">),</span>
-   <span class="n">message</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;l&quot;</span><span class="p">),</span>
-   <span class="n">message</span><span class="o">.</span><span class="n">reverse_index</span><span class="p">(</span><span class="s2">&quot;l&quot;</span><span class="p">),</span>
-   <span class="n">message</span><span class="o">.</span><span class="n">reverse_index</span><span class="p">(</span><span class="s2">&quot;ll&quot;</span><span class="p">)</span>
+<span class="bp">p!</span> <span class="n">message</span> <span class="o">==</span> <span class="s2">&quot;Hello World&quot;</span><span class="p">,</span>
+   <span class="n">message</span> <span class="o">==</span> <span class="s2">&quot;Hello Crystal&quot;</span><span class="p">,</span>
+   <span class="n">message</span> <span class="o">==</span> <span class="s2">&quot;hello world&quot;</span><span class="p">,</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">,</span> <span class="ss">case_insensitive</span><span class="p">:</span> <span class="kc">false</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">,</span> <span class="ss">case_insensitive</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="partial-components">Partial Components<a class="headerlink" href="#partial-components" title="Permanent link">&para;</a></h2>
+<p>Sometimes it's not important to know whether a string matches another exactly, and you just want to
+know if one string contains another. For example, let's check if the message is about Crystal using the
+<code>#includes?</code> method.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
 
-<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">char_at</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span>
-   <span class="n">message</span><span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span><span class="p">,</span>
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">includes?</span><span class="p">(</span><span class="s2">&quot;Crystal&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">includes?</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="comparison">Comparison<a class="headerlink" href="#comparison" title="Permanent link">&para;</a></h2>
-<div class="crystal-play highlight"><pre><span></span><code><span class="bp">p!</span> <span class="s2">&quot;Hello World!&quot;</span> <span class="o">&lt;=&gt;</span> <span class="s2">&quot;Hello Crystal!&quot;</span>
-   <span class="s2">&quot;Hello World&quot;</span><span class="o">.</span><span class="n">compare</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">,</span> <span class="ss">case_insensitive</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+<p>Particularly interesting ar often the beginning and end of a string. That's where the methods <code>#starts_with?</code> and <code>#ends_with?</code>
+come into play.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">starts_with?</span><span class="p">(</span><span class="s2">&quot;Bye&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">ends_with?</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">ends_with?</span><span class="p">(</span><span class="s2">&quot;?&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="stripping">Stripping<a class="headerlink" href="#stripping" title="Permanent link">&para;</a></h2>
-<div class="crystal-play highlight"><pre><span></span><code><span class="bp">p!</span> <span class="s2">&quot;Hello World!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">chomp</span><span class="p">,</span>
-   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">chomp</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">),</span>
-   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">lchop</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">),</span>
-   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">rchop</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">),</span>
-   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">rchop</span><span class="p">(</span><span class="s2">&quot;Crystal&quot;</span><span class="p">),</span>
-   <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">rchop?</span><span class="p">(</span><span class="s2">&quot;Crystal&quot;</span><span class="p">)</span>
+<h2 id="extracting-substrings">Extracting Substrings<a class="headerlink" href="#extracting-substrings" title="Permanent link">&para;</a></h2>
+<p>A substring is a part of a string. If you want to extract parts of the string,
+there are several ways to do that.</p>
+<p>The index accessor <code>#[]</code> allows referencing a substring by character index and size. Character
+indices start at <code>0</code> and reach to length (i.e. the value of <code>#size</code>) minus one.
+The first argument specifies the index of the first character that is supposed to be in the substring,
+and the second argument specifies the length of the substring. <code>message[6, 5]</code> extracts a substring
+of five characters long, starting at index six.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>
 </code></pre></div>
-<h2 id="replacing">Replacing<a class="headerlink" href="#replacing" title="Permanent link">&para;</a></h2>
-<div class="crystal-play highlight"><pre><span></span><code><span class="bp">p!</span> <span class="s2">&quot;Hello World!&quot;</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="s2">&quot;Crystal&quot;</span><span class="p">),</span>
-   <span class="s2">&quot;Hello World! Hello Crystal!&quot;</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Hola&quot;</span><span class="p">),</span>
-   <span class="s2">&quot;Hello World! Hello Crystal!&quot;</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;Hola&quot;</span><span class="p">)</span>
+<p>Let's assume we have established that the string starts with <code>Hello</code> and ends with <code>!</code> and want to extract what's in
+between.
+If the message was <code>Hello Crystal</code>, we wouldn't get the entire word <code>Crystal</code> because it's longer than five characters.</p>
+<p>A solution is to calculate the length of the substring from the length of the entire string minus the lengths of beginning and end.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">[</span><span class="mi">6</span><span class="p">,</span> <span class="n">message</span><span class="o">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">6</span> <span class="o">-</span> <span class="mi">1</span><span class="o">]</span>
 </code></pre></div>
-<h2 id="interpolation_1">Interpolation<a class="headerlink" href="#interpolation_1" title="Permanent link">&para;</a></h2>
-<h2 id="regex">Regex (?)<a class="headerlink" href="#regex" title="Permanent link">&para;</a></h2>
-<h2 id="iteration">Iteration (?)<a class="headerlink" href="#iteration" title="Permanent link">&para;</a></h2>
+<p>There's an easier way to do that: The index accessor can be used with a <a href="https://crystal-lang.org/api/latest/Range.html"><code>Range</code></a>
+of character indices. A range literal consists of a start value and an end value, connected by two dots (<code>..</code>).
+The first value indicates the start index of the substring, as before, but the second is the end index (as opposed to the length).
+Now we don't need to repeat the start index in the calculation, because the end index is just the size minus two
+(one for the end index, and one for excluding the last character).</p>
+<p>It can be even easier: Negative index values automatically relate to the end of the string, so we don't need to calculate
+the end index from the string size explicitly.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">[</span><span class="mi">6</span><span class="o">..</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span><span class="o">]</span><span class="p">,</span>
+   <span class="n">message</span><span class="o">[</span><span class="mi">6</span><span class="o">..-</span><span class="mi">2</span><span class="o">]</span>
+</code></pre></div>
+<h2 id="substitution">Substitution<a class="headerlink" href="#substitution" title="Permanent link">&para;</a></h2>
+<p>In a very similar manner, we can alter a string. Let's make sure, we properly greet Crystal, and nothing else.
+Instead of accessing a substring, we call <code>#sub</code>. The first argument is again a range to indicate the location
+that gets replaced by the value of the second argument.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="mi">6</span><span class="o">..-</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;Crystal&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>The <code>#sub</code> method is very versatile and can be used in different way. We could also pass a search string as first argument
+and it replaces that substring with the value of the second argument.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="s2">&quot;Crystal&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><code>#sub</code> only replaces the first instance of a search string. It's big brother <code>#gsub</code> applies to all instances.</p>
+<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello World! Bye World.&quot;</span>
+
+<span class="bp">p!</span> <span class="n">message</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="s2">&quot;Crystal&quot;</span><span class="p">),</span>
+   <span class="n">message</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="s2">&quot;Crystal&quot;</span><span class="p">)</span>
+</code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can find more detailed info in the <a href="../../syntax_and_semantics/literals/string.html">string literal reference</a> and <a href="https://crystal-lang.org/api/latest/String.html">String API docs</a>.</p>

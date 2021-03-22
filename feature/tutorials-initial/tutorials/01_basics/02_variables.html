@@ -9,7 +9,7 @@
       
       
       
-        <link rel="canonical" href="https://crystal-lang.org/reference/tutorials/01_basics/02_variables.html">
+        <link rel="canonical" href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/tutorials/01_basics/02_variables.html">
       
       <link rel="shortcut icon" href="https://crystal-lang.org/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
@@ -89,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -181,7 +181,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://crystal-lang.org/reference/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -2672,13 +2672,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#type-declaration" class="md-nav__link">
-    Type Declaration
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2743,19 +2736,6 @@
   </li>
 
         
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../xx_types/index.html" class="md-nav__link">
-      Types
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -2799,13 +2779,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#type-declaration" class="md-nav__link">
-    Type Declaration
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2826,7 +2799,7 @@
                 <h1 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h1>
 <p>In order to store a value and re-use it later, it can be assigned to a variable.</p>
 <p>For example, if you want to say <code>Hello Penny!</code> three times, you don't need to repeat the same string multiple times.
-Instead, you can assign it to a local variable and re-use it:</p>
+Instead, you can assign it to a variable and re-use it:</p>
 <div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
 
 <span class="nb">puts</span> <span class="n">message</span>
@@ -2834,13 +2807,14 @@ Instead, you can assign it to a local variable and re-use it:</p>
 <span class="nb">puts</span> <span class="n">message</span>
 </code></pre></div>
 <p>This program prints the string <code>Hello Penny!</code> three times to the standard output, each followed by a line break.</p>
-<p>The name of a local variable always starts with a lowercase <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> letter (or an underscore, but that's reserved for special use cases) and can otherwise consist of alphanumeric characters or underscores. As a typical convention, upper-case letter are avoided and names are written in <a href="https://en.wikipedia.org/wiki/Snake_case"><code>snake_case</code></a>.</p>
+<p>The name of a variable always starts with a lowercase <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> letter (or an underscore, but that's reserved for special use cases) and can otherwise consist of alphanumeric characters or underscores. As a typical convention, upper-case letter are avoided and names are written in <a href="https://en.wikipedia.org/wiki/Snake_case"><code>snake_case</code></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Other kinds of variables will be introduced later. For now we focus on local variables only.</p>
+<p>The kind of variables this lesson discusses are called <em>local variables</em>.
+Other kinds will be introduced later. For now we focus on local variables only.</p>
 </div>
 <h2 id="type">Type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h2>
-<p>The type of local variable is automatically inferred by the compiler. In the above example, it's <a href="https://crystal-lang.org/api/String.cr"><code>String</code></a>.</p>
+<p>The type of a variable is automatically inferred by the compiler. In the above example, it's <a href="https://crystal-lang.org/api/String.cr"><code>String</code></a>.</p>
 <p>You can verify this with <a href="https://crystal-lang.org/api/toplevel.html#typeof(*expression):Class-class-method"><code>typeof</code></a>:</p>
 <div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
 
@@ -2851,7 +2825,7 @@ Instead, you can assign it to a local variable and re-use it:</p>
 <p><a href="https://crystal-lang.org/api/toplevel.html#p!(*exps)-macro"><code>p!</code></a> is similar to <code>puts</code> as it prints the value to the standard output, but it also prints the expression in code. This makes it a useful tool for inspecting the state of a Crystal program and debugging.</p>
 </div>
 <h2 id="reassigning-a-value">Reassigning a Value<a class="headerlink" href="#reassigning-a-value" title="Permanent link">&para;</a></h2>
-<p>A local variable can be reassigned with a different value:</p>
+<p>A variable can be reassigned with a different value:</p>
 <div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
 
 <span class="bp">p!</span> <span class="n">message</span>
@@ -2869,26 +2843,6 @@ Instead, you can assign it to a local variable and re-use it:</p>
 
 <span class="bp">p!</span> <span class="n">message</span><span class="p">,</span> <span class="kp">typeof</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="type-declaration">Type Declaration<a class="headerlink" href="#type-declaration" title="Permanent link">&para;</a></h2>
-<div class="admonition todo">
-<p class="admonition-title">Todo</p>
-<p>Skip this section b/c practical irrelenvance?</p>
-</div>
-<p>The type can also be declared explicitly. In this case, it's impossible to reassign a value of a different type. Adding <code>message = 73</code> to the following program would be a compiler error:</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="p">:</span> <span class="n">String</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-
-<span class="bp">p!</span> <span class="kp">typeof</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-</code></pre></div>
-<p>Type declaration and value assignment can also be separated. But it's impossible to read from the variable before a value is assigned (this would result in a compiler error).</p>
-<div class="crystal-play highlight"><pre><span></span><code><span class="n">message</span> <span class="p">:</span> <span class="n">String</span>
-
-<span class="c1"># Can&#39;t do `p! message` here before the assignment</span>
-
-<span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello Penny!&quot;</span>
-
-<span class="bp">p!</span> <span class="kp">typeof</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-</code></pre></div>
-<p>In practice it is rarely necessary or useful to declare the type of local variables.</p>
                 
               
               
