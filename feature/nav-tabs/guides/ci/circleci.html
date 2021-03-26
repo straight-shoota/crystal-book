@@ -16,7 +16,7 @@
     
     
       
-        <title>Using CircleCI - Crystal</title>
+        <title>CircleCI - Crystal</title>
       
     
     
@@ -42,7 +42,13 @@
     
     
     
+      <link rel="stylesheet" href="../../assets/vendor/codemirror/codemirror.min.css">
+    
       <link rel="stylesheet" href="../../assets/style.css">
+    
+      <link rel="stylesheet" href="../../assets/vendor/carcin-play/carcin-play.css">
+    
+      <link rel="stylesheet" href="../../assets/vendor/carcin-play/codemirror-theme.css">
     
     
       
@@ -83,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -101,7 +107,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Using CircleCI
+              CircleCI
             
           </span>
         </div>
@@ -183,7 +189,7 @@
 
   <li class="md-tabs__item">
     <a href="../../syntax_and_semantics/index.html" class="md-tabs__link">
-      Language Specification
+      Specification
     </a>
   </li>
 
@@ -236,7 +242,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../../assets/crystal-circ.svg" alt="logo">
 
@@ -433,17 +439,17 @@
         <a href="../../syntax_and_semantics/index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Specification
+        Specification
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Specification" data-md-level="1">
+    <nav class="md-nav" aria-label="Specification" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="../../syntax_and_semantics/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Specification
+          Specification
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2457,8 +2463,21 @@
 
 
   <li class="md-nav__item">
+    <a href="gh-actions.html" class="md-nav__link">
+      GitHub Actions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="travis.html" class="md-nav__link">
-      Using Travis CI
+      Travis CI
     </a>
   </li>
 
@@ -2484,12 +2503,12 @@
           <a href="circleci.html" class="md-nav__link md-nav__link--active"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Using CircleCI
+          CircleCI
         </a>
       </label>
     
     <a href="circleci.html" class="md-nav__link md-nav__link--active">
-      Using CircleCI
+      CircleCI
     </a>
     
       
@@ -2688,10 +2707,153 @@
 
 
 
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      <span class="md-nav__icon md-icon"></span>
+      
+        <a href="../../tutorials/index.html" class="md-nav__link"
+          style="margin: initial; padding: initial; pointer-events: initial">
+      
+        Tutorials
+      </a>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../tutorials/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Tutorials
+        </a>
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" >
+    
+    <label class="md-nav__link" for="nav-4-1">
+      <span class="md-nav__icon md-icon"></span>
+      
+        <a href="../../tutorials/basics/index.html" class="md-nav__link"
+          style="margin: initial; padding: initial; pointer-events: initial">
+      
+        Basics
+      </a>
+    </label>
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../../tutorials/basics/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Basics
+        </a>
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
   <li class="md-nav__item">
-    <a href="../../tutorials/index.html" class="md-nav__link">
-      Tutorials
+    <a href="../../tutorials/basics/10_hello_world.html" class="md-nav__link">
+      Hello World
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/basics/20_variables.html" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/basics/30_math.html" class="md-nav__link">
+      Math
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/basics/40_strings.html" class="md-nav__link">
+      Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/basics/50_control_flow.html" class="md-nav__link">
+      Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/basics/60_methods.html" class="md-nav__link">
+      Methods
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -2817,105 +2979,115 @@
 <h2 id="build-and-run-specs">Build and run specs<a class="headerlink" href="#build-and-run-specs" title="Permanent link">&para;</a></h2>
 <h3 id="simple-example-using-latest">Simple example using <code>latest</code><a class="headerlink" href="#simple-example-using-latest" title="Permanent link">&para;</a></h3>
 <p>Let’s start with a simple example. We are going to run the tests <strong>using latest</strong> Crystal release:</p>
-<div class="highlight"><pre><span></span><code># .circleci/config.yml
-workflows:
-  version: 2
-  build:
-    jobs:
-      - crystal/test
+<div class="admonition example">
+<p class="admonition-title">.circleci/config.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">jobs</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">crystal/test</span>
 
-orbs:
-  crystal: manastech/crystal@1.0
-version: 2.1
+<span class="nt">orbs</span><span class="p">:</span>
+  <span class="nt">crystal</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">manastech/crystal@1.0</span>
+<span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.1</span>
 </code></pre></div>
+</div>
 <p>Yeah! That was simple! With Orbs an abstraction layer is built so that the configuration file is more readable and intuitive.</p>
 <p>In case we are wondering what the job <a href="https://circleci.com/orbs/registry/orb/manastech/crystal#jobs-test">crystal/test</a> does, we always may see the source code.</p>
 <h3 id="using-nightly">Using <code>nightly</code><a class="headerlink" href="#using-nightly" title="Permanent link">&para;</a></h3>
 <p>Using nightly Crystal release is as easy as:</p>
-<div class="highlight"><pre><span></span><code># .circleci/config.yml
-workflows:
-  version: 2
-  build:
-    jobs:
-      - crystal/test:
-          name: test-on-nightly
-          executor:
-            name: crystal/default
-            tag: nightly
+<div class="admonition example">
+<p class="admonition-title">.circleci/config.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">jobs</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">crystal/test</span><span class="p">:</span>
+          <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test-on-nightly</span>
+          <span class="nt">executor</span><span class="p">:</span>
+            <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal/default</span>
+            <span class="nt">tag</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nightly</span>
 
-orbs:
-  crystal: manastech/crystal@1.0
-version: 2.1
+<span class="nt">orbs</span><span class="p">:</span>
+  <span class="nt">crystal</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">manastech/crystal@1.0</span>
+<span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.1</span>
 </code></pre></div>
+</div>
 <h3 id="using-a-specific-crystal-release">Using a specific Crystal release<a class="headerlink" href="#using-a-specific-crystal-release" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code># .circleci/config.yml
-workflows:
-  version: 2
-  build:
-    jobs:
-      - crystal/test:
-          name: test-on-0.30
-          executor:
-            name: crystal/default
-            tag: 0.30.0
+<div class="admonition example">
+<p class="admonition-title">.circleci/config.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">jobs</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">crystal/test</span><span class="p">:</span>
+          <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test-on-0.30</span>
+          <span class="nt">executor</span><span class="p">:</span>
+            <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal/default</span>
+            <span class="nt">tag</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.30.0</span>
 
-orbs:
-  crystal: manastech/crystal@1.0
-version: 2.1
+<span class="nt">orbs</span><span class="p">:</span>
+  <span class="nt">crystal</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">manastech/crystal@1.0</span>
+<span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.1</span>
 </code></pre></div>
+</div>
 <h2 id="installing-shards-packages">Installing shards packages<a class="headerlink" href="#installing-shards-packages" title="Permanent link">&para;</a></h2>
 <p>You need not worry about it since the <code>crystal/test</code> job runs the <code>crystal/shard-install</code> orb command.</p>
 <h2 id="installing-binary-dependencies">Installing binary dependencies<a class="headerlink" href="#installing-binary-dependencies" title="Permanent link">&para;</a></h2>
 <p>Our application or maybe some shards may require libraries and packages. This binary dependencies may be installed using the <a href="https://help.ubuntu.com/lts/serverguide/apt.html">Apt</a> command.</p>
 <p>Here is an example installing the <code>libsqlite3</code> development package:</p>
-<div class="highlight"><pre><span></span><code># .circleci/config.yml
-workflows:
-  version: 2
-  build:
-    jobs:
-      - crystal/test:
-          pre-steps:
-            - run: apt-get update &amp;&amp; apt-get install -y libsqlite3-dev
+<div class="admonition example">
+<p class="admonition-title">.circleci/config.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">jobs</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">crystal/test</span><span class="p">:</span>
+          <span class="nt">pre-steps</span><span class="p">:</span>
+            <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">apt-get update &amp;&amp; apt-get install -y libsqlite3-dev</span>
 
-orbs:
-  crystal: manastech/crystal@1.0
-version: 2.1
+<span class="nt">orbs</span><span class="p">:</span>
+  <span class="nt">crystal</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">manastech/crystal@1.0</span>
+<span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.1</span>
 </code></pre></div>
+</div>
 <h2 id="using-services">Using services<a class="headerlink" href="#using-services" title="Permanent link">&para;</a></h2>
 <p>Now, let’s run specs using an external service (for example MySQL):</p>
-<div class="highlight"><pre><span></span><code># .circleci/config.yml
-executors:
-  crystal_mysql:
-    docker:
-      - image: &#39;crystallang/crystal:latest&#39;
-        environment:
-          DATABASE_URL: &#39;mysql://root@localhost/db&#39;
-      - image: &#39;mysql:5.7&#39;
-        environment:
-          MYSQL_DATABASE: db
-          MYSQL_ALLOW_EMPTY_PASSWORD: &#39;yes&#39;
+<div class="admonition example">
+<p class="admonition-title">.circleci/config.yml</p>
+<div class="highlight"><pre><span></span><code><span class="nt">executors</span><span class="p">:</span>
+  <span class="nt">crystal_mysql</span><span class="p">:</span>
+    <span class="nt">docker</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">image</span><span class="p">:</span> <span class="s">&#39;crystallang/crystal:latest&#39;</span>
+        <span class="nt">environment</span><span class="p">:</span>
+          <span class="nt">DATABASE_URL</span><span class="p">:</span> <span class="s">&#39;mysql://root@localhost/db&#39;</span>
+      <span class="p p-Indicator">-</span> <span class="nt">image</span><span class="p">:</span> <span class="s">&#39;mysql:5.7&#39;</span>
+        <span class="nt">environment</span><span class="p">:</span>
+          <span class="nt">MYSQL_DATABASE</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
+          <span class="nt">MYSQL_ALLOW_EMPTY_PASSWORD</span><span class="p">:</span> <span class="s">&#39;yes&#39;</span>
 
-workflows:
-  version: 2
-  build:
-    jobs:
-      - crystal/test:
-          executor: crystal_mysql
-          pre-steps:
-            - run:
-                name: Waiting for service to start (check dockerize)
-                command: sleep 1m
-            - checkout
-            - run:
-                name: Install MySQL CLI; Import dummy data
-                command: |
-                        apt-get update &amp;&amp; apt-get install -y mysql-client
-                        mysql -h 127.0.0.1 -u root --password=&quot;&quot; db &lt; test-data/setup.sql
+<span class="nt">workflows</span><span class="p">:</span>
+  <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="nt">build</span><span class="p">:</span>
+    <span class="nt">jobs</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">crystal/test</span><span class="p">:</span>
+          <span class="nt">executor</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">crystal_mysql</span>
+          <span class="nt">pre-steps</span><span class="p">:</span>
+            <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+                <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Waiting for service to start (check dockerize)</span>
+                <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sleep 1m</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">checkout</span>
+            <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span>
+                <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install MySQL CLI; Import dummy data</span>
+                <span class="nt">command</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+                        <span class="no">apt-get update &amp;&amp; apt-get install -y mysql-client</span>
+                        <span class="no">mysql -h 127.0.0.1 -u root --password=&quot;&quot; db &lt; test-data/setup.sql</span>
 
-orbs:
-  crystal: manastech/crystal@1.0
-version: 2.1
+<span class="nt">orbs</span><span class="p">:</span>
+  <span class="nt">crystal</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">manastech/crystal@1.0</span>
+<span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.1</span>
 </code></pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The explicit <code>checkout</code> in the <code>pre-steps</code> is to have the <code>test-data/setup.sql</code> file available.</p>
@@ -2949,7 +3121,7 @@ version: 2.1
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Using Travis CI
+                Travis CI
               </div>
             </div>
           </a>
@@ -3000,6 +3172,18 @@ version: 2.1
           }, typeof search !== "undefined" && search)
         })
       </script>
+      
+        <script src="../../assets/vendor/codemirror/codemirror.min.js"></script>
+      
+        <script src="../../assets/vendor/codemirror/mode/crystal/crystal.min.js"></script>
+      
+        <script src="../../assets/vendor/carcin-play/carcin.js"></script>
+      
+        <script src="../../assets/vendor/carcin-play/carcin-play.js"></script>
+      
+        <script src="../../assets/vendor/ansi_up/ansi_up.min.js"></script>
+      
+        <script src="../../assets/crystal-play.js"></script>
       
     
   </body>

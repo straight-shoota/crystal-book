@@ -42,7 +42,13 @@
     
     
     
+      <link rel="stylesheet" href="../assets/vendor/codemirror/codemirror.min.css">
+    
       <link rel="stylesheet" href="../assets/style.css">
+    
+      <link rel="stylesheet" href="../assets/vendor/carcin-play/carcin-play.css">
+    
+      <link rel="stylesheet" href="../assets/vendor/carcin-play/codemirror-theme.css">
     
     
       
@@ -83,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
+    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs" title="Crystal" class="md-header-nav__button md-logo" aria-label="Crystal">
       
   <img src="../assets/crystal-circ.svg" alt="logo">
 
@@ -185,7 +191,7 @@
 
   <li class="md-tabs__item">
     <a href="index.html" class="md-tabs__link md-tabs__link--active">
-      Language Specification
+      Specification
     </a>
   </li>
 
@@ -236,7 +242,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs/" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
+    <a href="https://straight-shoota.github.io/crystal-book/feature/nav-tabs" title="Crystal" class="md-nav__button md-logo" aria-label="Crystal">
       
   <img src="../assets/crystal-circ.svg" alt="logo">
 
@@ -435,17 +441,17 @@
         <a href="index.html" class="md-nav__link"
           style="margin: initial; padding: initial; pointer-events: initial">
       
-        Language Specification
+        Specification
       </a>
     </label>
-    <nav class="md-nav" aria-label="Language Specification" data-md-level="1">
+    <nav class="md-nav" aria-label="Specification" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         
           <a href="index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
-          Language Specification
+          Specification
         </a>
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1029,6 +1035,47 @@
           <li class="md-nav__item">
   <a href="#comparing-against-a-type-will-perform-an-is_a-check" class="md-nav__link">
     Comparing against a type will perform an is_a? check
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exhaustive-case" class="md-nav__link">
+    Exhaustive case
+  </a>
+  
+    <nav class="md-nav" aria-label="Exhaustive case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#union-type-checks" class="md-nav__link">
+    Union type checks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bool-values" class="md-nav__link">
+    Bool values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum-values" class="md-nav__link">
+    Enum values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple-literals" class="md-nav__link">
+    Tuple literals
   </a>
   
 </li>
@@ -2534,8 +2581,21 @@
 
 
   <li class="md-nav__item">
+    <a href="../guides/ci/gh-actions.html" class="md-nav__link">
+      GitHub Actions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../guides/ci/travis.html" class="md-nav__link">
-      Using Travis CI
+      Travis CI
     </a>
   </li>
 
@@ -2548,7 +2608,7 @@
 
   <li class="md-nav__item">
     <a href="../guides/ci/circleci.html" class="md-nav__link">
-      Using CircleCI
+      CircleCI
     </a>
   </li>
 
@@ -2660,10 +2720,153 @@
 
 
 
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      <span class="md-nav__icon md-icon"></span>
+      
+        <a href="../tutorials/index.html" class="md-nav__link"
+          style="margin: initial; padding: initial; pointer-events: initial">
+      
+        Tutorials
+      </a>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../tutorials/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Tutorials
+        </a>
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" >
+    
+    <label class="md-nav__link" for="nav-4-1">
+      <span class="md-nav__icon md-icon"></span>
+      
+        <a href="../tutorials/basics/index.html" class="md-nav__link"
+          style="margin: initial; padding: initial; pointer-events: initial">
+      
+        Basics
+      </a>
+    </label>
+    <nav class="md-nav" aria-label="Basics" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../tutorials/basics/index.html" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          Basics
+        </a>
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
   <li class="md-nav__item">
-    <a href="../tutorials/index.html" class="md-nav__link">
-      Tutorials
+    <a href="../tutorials/basics/10_hello_world.html" class="md-nav__link">
+      Hello World
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/basics/20_variables.html" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/basics/30_math.html" class="md-nav__link">
+      Math
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/basics/40_strings.html" class="md-nav__link">
+      Strings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/basics/50_control_flow.html" class="md-nav__link">
+      Control Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/basics/60_methods.html" class="md-nav__link">
+      Methods
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -2723,6 +2926,47 @@
           <li class="md-nav__item">
   <a href="#comparing-against-a-type-will-perform-an-is_a-check" class="md-nav__link">
     Comparing against a type will perform an is_a? check
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exhaustive-case" class="md-nav__link">
+    Exhaustive case
+  </a>
+  
+    <nav class="md-nav" aria-label="Exhaustive case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#union-type-checks" class="md-nav__link">
+    Union type checks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bool-values" class="md-nav__link">
+    Bool values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum-values" class="md-nav__link">
+    Enum values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tuple-literals" class="md-nav__link">
+    Tuple literals
   </a>
   
 </li>
@@ -2865,6 +3109,68 @@
   <span class="c1"># and the type of value2 is known to be an Int32</span>
 <span class="k">end</span>
 </code></pre></div>
+<h2 id="exhaustive-case">Exhaustive case<a class="headerlink" href="#exhaustive-case" title="Permanent link">&para;</a></h2>
+<p>Using <code>in</code> instead of <code>when</code> produces an exhaustive case expression; in an exhaustive case, it is a compile-time error to omit any of the required <code>in</code> conditions. An exhaustive <code>case</code> cannot contain any <code>when</code> or <code>else</code> clauses.</p>
+<p>The compiler supports the following <code>in</code> conditions:</p>
+<h3 id="union-type-checks">Union type checks<a class="headerlink" href="#union-type-checks" title="Permanent link">&para;</a></h3>
+<p>If <code>case</code>'s expression is a union value, each of the union types may be used as a condition:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># var : (Bool | Char | String)?</span>
+<span class="k">case</span> <span class="n">var</span>
+<span class="k">in</span> <span class="n">String</span>
+  <span class="c1"># var : String</span>
+<span class="k">in</span> <span class="n">Char</span>
+  <span class="c1"># var : Char</span>
+<span class="k">in</span> <span class="n">Bool</span>
+  <span class="c1"># var : Bool</span>
+<span class="k">in</span> <span class="kc">nil</span> <span class="c1"># or Nil, but .nil? is not allowed</span>
+  <span class="c1"># var : Nil</span>
+<span class="k">end</span>
+</code></pre></div>
+<h3 id="bool-values">Bool values<a class="headerlink" href="#bool-values" title="Permanent link">&para;</a></h3>
+<p>If <code>case</code>'s expression is a <code>Bool</code> value, the <code>true</code> and <code>false</code> literals may be used as conditions:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># var : Bool</span>
+<span class="k">case</span> <span class="n">var</span>
+<span class="k">in</span> <span class="kc">true</span>
+  <span class="n">do_something</span>
+<span class="k">in</span> <span class="kc">false</span>
+  <span class="n">do_something_else</span>
+<span class="k">end</span>
+</code></pre></div>
+<h3 id="enum-values">Enum values<a class="headerlink" href="#enum-values" title="Permanent link">&para;</a></h3>
+<p>If <code>case</code>'s expression is a non-flags enum value, its members may be used as conditions, either as constant or predicate method.</p>
+<div class="highlight"><pre><span></span><code><span class="k">enum</span> <span class="nc">Foo</span>
+  <span class="n">X</span>
+  <span class="n">Y</span>
+  <span class="n">Z</span>
+<span class="k">end</span>
+
+<span class="c1"># var : Foo</span>
+<span class="k">case</span> <span class="n">var</span>
+<span class="k">in</span> <span class="n">Foo</span><span class="o">::</span><span class="n">X</span>
+  <span class="c1"># var == Foo::X</span>
+<span class="k">in</span> <span class="o">.</span><span class="n">y?</span>
+  <span class="c1"># var == Foo::Y</span>
+<span class="k">in</span> <span class="o">.</span><span class="n">z?</span> <span class="c1"># :z is not allowed</span>
+  <span class="c1"># var == Foo::Z</span>
+<span class="k">end</span>
+</code></pre></div>
+<h3 id="tuple-literals">Tuple literals<a class="headerlink" href="#tuple-literals" title="Permanent link">&para;</a></h3>
+<p>The conditions must exhaust all possible combinations of the <code>case</code> expression's elements:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># value1, value2 : Bool</span>
+<span class="k">case</span> <span class="p">{</span><span class="n">value1</span><span class="p">,</span> <span class="n">value2</span><span class="p">}</span>
+<span class="k">in</span> <span class="p">{</span><span class="kc">true</span><span class="p">,</span> <span class="n">_</span><span class="p">}</span>
+  <span class="c1"># value1 is true, value2 can be true or false</span>
+  <span class="n">do_something</span>
+<span class="k">in</span> <span class="p">{</span><span class="n">_</span><span class="p">,</span> <span class="kc">false</span><span class="p">}</span>
+  <span class="c1"># here value1 is false, and value2 is also false</span>
+  <span class="n">do_something_else</span>
+<span class="k">end</span>
+
+<span class="c1"># Error: case is not exhaustive.</span>
+<span class="c1">#</span>
+<span class="c1"># Missing cases:</span>
+<span class="c1">#  - {false, true}</span>
+</code></pre></div>
                 
               
               
@@ -2943,6 +3249,18 @@
           }, typeof search !== "undefined" && search)
         })
       </script>
+      
+        <script src="../assets/vendor/codemirror/codemirror.min.js"></script>
+      
+        <script src="../assets/vendor/codemirror/mode/crystal/crystal.min.js"></script>
+      
+        <script src="../assets/vendor/carcin-play/carcin.js"></script>
+      
+        <script src="../assets/vendor/carcin-play/carcin-play.js"></script>
+      
+        <script src="../assets/vendor/ansi_up/ansi_up.min.js"></script>
+      
+        <script src="../assets/crystal-play.js"></script>
       
     
   </body>
